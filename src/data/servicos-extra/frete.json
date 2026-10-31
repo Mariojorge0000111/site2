@@ -1,0 +1,53 @@
+{
+  "secoes": [
+    {
+      "h2": "Qual veículo vai no seu frete",
+      "paragrafos": [
+        "O veículo certo é o que leva tudo numa viagem só, sem sobrar espaço demais. Veículo grande demais encarece. Pequeno demais obriga a voltar. Por isso pedimos a lista e as fotos antes de passar o valor.",
+        "A tabela abaixo é um guia. Ela não é regra fixa: um único roupeiro grande pode mudar a escolha."
+      ],
+      "tabela": {
+        "cabecalho": ["Carga", "Veículo indicado", "Observação"],
+        "linhas": [
+          ["Até 5 itens médios", "Utilitário", "Circula bem no Centro"],
+          ["Um quarto ou uma kitnet", "Caminhão pequeno", "Costuma resolver em uma viagem"],
+          ["Estoque ou carga com muitos volumes", "Caminhão baú", "Carga fechada contra chuva"],
+          ["Mudança de casa inteira", "Caminhão maior", "Veja a página de mudança residencial"]
+        ]
+      }
+    },
+    {
+      "h2": "Frete para as cidades vizinhas",
+      "paragrafos": [
+        "Muita gente que mora em Passo Fundo tem família ou trabalho nas cidades em volta. Fazemos frete para Marau, pela RS-324, e também para Carazinho, Coxilha, Pontão, Mato Castelhano, Ernestina e Santo Antônio do Planalto.",
+        "As saídas principais são a BR-285, no sentido leste e oeste, e a BR-153, no sentido norte e sul. A rota é escolhida no dia conforme o destino e o trânsito. No inverno, com neblina cedo na rodovia, às vezes vale sair um pouco mais tarde.",
+        "Para entender como funciona a cobrança nessas viagens, leia o guia de [frete de Passo Fundo para cidades da região](/blog/frete-passo-fundo-para-cidades-da-regiao/)."
+      ]
+    },
+    {
+      "h2": "Centro, Av. Brasil e caminhão acima de 7 t",
+      "paragrafos": [
+        "O Decreto Municipal 78/2021 restringe a circulação de caminhões com carga acima de 7 toneladas na Av. Brasil e em pontos do Centro. Há um pedido de autorização excepcional na Secretaria de Segurança da prefeitura.",
+        "Na maioria dos fretes a carga fica bem abaixo desse peso, e um veículo menor resolve. Quando o volume é grande e o endereço fica no Centro, a gente ajuda a verificar se a autorização é necessária antes de marcar o dia. Os detalhes estão no texto sobre [caminhão no Centro de Passo Fundo](/blog/caminhao-no-centro-de-passo-fundo-restricao/)."
+      ]
+    },
+    {
+      "h2": "O que você precisa mandar para receber o valor",
+      "paragrafos": [
+        "Quanto mais claro o pedido, mais rápido sai o orçamento. Mande pelo WhatsApp ou pela página de [contato](/contato/):"
+      ],
+      "lista": [
+        "Endereço de retirada e de entrega, com bairro",
+        "Lista dos itens e foto dos maiores",
+        "Andar, escada ou elevador nos dois lados",
+        "Data desejada e se há flexibilidade de dia",
+        "Se precisa de ajudante para carregar"
+      ]
+    }
+  ],
+  "faqExtra": [
+    { "p": "Posso acompanhar a carga no veículo?", "r": "Depende do veículo e do número de lugares na cabine. Pergunte no orçamento. Na maioria dos casos, o cliente vai no próprio carro e encontra a equipe no destino." },
+    { "p": "Fazem frete com retirada em dois endereços?", "r": "Sim, se os dois pontos estiverem no caminho. Avise os dois endereços no pedido para o valor já considerar a parada extra." },
+    { "p": "Qual a menor carga que vocês levam?", "r": "Para um ou dois itens, o serviço indicado é o [carreto](/servicos/carreto/), com veículo menor e preço mais baixo." }
+  ]
+}

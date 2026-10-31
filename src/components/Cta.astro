@@ -7,8 +7,8 @@ interface Props {
   mensagem?: string;
 }
 const {
-  titulo = 'Vai mudar? Peça seu orçamento.',
-  texto = 'Conte o que precisa levar, de onde e para onde. Você recebe o valor pelo WhatsApp antes de fechar qualquer coisa.',
+  titulo = 'Vai mudar? Fale com a gente.',
+  texto = 'Mande o que precisa levar e os endereços. O valor chega pelo WhatsApp, antes de você fechar.',
   mensagem,
 } = Astro.props;
 ---
@@ -18,6 +18,6 @@ const {
       <h2>{titulo}</h2>
       <p>{texto}</p>
     </div>
-    <a class="btn btn-preto" href={linkWhatsapp(mensagem)} target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+    <a class="btn btn-preto" href={linkWhatsapp(mensagem)} target="_blank" rel="noopener">Chamar no WhatsApp</a>
   </div>
 </section>

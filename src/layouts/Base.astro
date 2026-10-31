@@ -1,5 +1,6 @@
 ---
-import { SITE, linkWhatsapp } from '../config';
+import { SITE, linkWhatsapp, REGIAO } from '../config';
+import { BAIRROS } from '../data/bairros';
 import { SERVICOS } from '../data/servicos';
 import '../styles/global.css';
 
@@ -27,8 +28,8 @@ const negocio = {
   description: SITE.slogan,
   url: new URL('/', Astro.site).href,
   image: new URL('/images/hero.webp', Astro.site).href,
-  areaServed: [{ '@type': 'City', name: 'Curitiba' }, { '@type': 'AdministrativeArea', name: 'Região Metropolitana de Curitiba' }],
-  openingHours: 'Mo-Sa 07:00-19:00',
+  areaServed: [{ '@type': 'City', name: 'Passo Fundo' }, ...REGIAO.map((c) => ({ '@type': 'City', name: c }))],
+  openingHours: 'Mo-Sa 07:30-18:30',
   ...(SITE.telefone ? { telephone: SITE.telefone } : {}),
 };
 const schemas = [negocio, ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
@@ -119,11 +120,7 @@ const wa = linkWhatsapp();
           <div>
             <p class="rodape-titulo">Bairros</p>
             <ul>
-              <li><a href="/bairros/batel/">Batel</a></li>
-              <li><a href="/bairros/agua-verde/">Água Verde</a></li>
-              <li><a href="/bairros/centro/">Centro</a></li>
-              <li><a href="/bairros/portao/">Portão</a></li>
-              <li><a href="/bairros/boqueirao/">Boqueirão</a></li>
+              {BAIRROS.slice(0, 5).map((b) => <li><a href={`/bairros/${b.slug}/`}>{b.nome}</a></li>)}
               <li><a href="/bairros/">Todos os bairros</a></li>
             </ul>
           </div>
@@ -138,7 +135,7 @@ const wa = linkWhatsapp();
           </div>
         </div>
         <div class="rodape-fim">
-          <span>© {new Date().getFullYear()} {SITE.nome}. Curitiba, PR.</span>
+          <span>© {new Date().getFullYear()} {SITE.nome}. Passo Fundo, RS.</span>
           <span>Fotos: Pexels</span>
         </div>
       </div>

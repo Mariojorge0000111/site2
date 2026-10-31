@@ -1,0 +1,41 @@
+{
+  "secoes": [
+    {
+      "h2": "Por que desmontar antes da mudança",
+      "paragrafos": [
+        "Móvel grande montado ocupa espaço no caminhão e força as juntas na viagem. Um roupeiro carregado inteiro pode empenar, soltar o fundo ou rachar a lateral na curva da escada.",
+        "Desmontado, ele vai deitado, protegido e sem peso sobre as dobradiças. No destino, a montagem volta o móvel ao prumo, com portas alinhadas.",
+        "Em apartamentos novos de Passo Fundo, com corredores e elevadores estreitos, a desmontagem muitas vezes é a única forma de o móvel entrar."
+      ]
+    },
+    {
+      "h2": "Quais móveis costumam ser desmontados",
+      "paragrafos": [
+        "A tabela mostra o que é comum em cada tipo de móvel. A decisão final é feita olhando a peça, por foto ou no local."
+      ],
+      "tabela": {
+        "cabecalho": ["Móvel", "Desmontar?", "Por quê"],
+        "linhas": [
+          ["Roupeiro de 4 a 6 portas", "Sim", "Não passa por portas e escadas inteiro"],
+          ["Cama de casal com cabeceira", "Sim", "Ocupa menos espaço e não risca"],
+          ["Beliche", "Sim", "Muito alto para elevador"],
+          ["Rack e painel de TV", "Em geral sim", "Painel pendurado precisa sair da parede"],
+          ["Cômoda pequena", "Em geral não", "Vai inteira, com gavetas presas"],
+          ["Mesa de jantar", "Depende", "Tampo de vidro sai sempre"]
+        ]
+      }
+    },
+    {
+      "h2": "Montagem junto da mudança ou avulsa",
+      "paragrafos": [
+        "Na [mudança residencial](/servicos/mudanca-residencial/), a desmontagem e a montagem podem ir no mesmo pacote. A equipe desmonta na saída e monta na chegada, no mesmo dia, se o volume permitir.",
+        "Também atendemos montagem avulsa. É o caso de quem comprou um roupeiro pela internet, recebeu as caixas no apartamento e não quer passar o fim de semana com a chave Allen. Diga o modelo e o bairro pelo [contato](/contato/)."
+      ]
+    }
+  ],
+  "faqExtra": [
+    { "p": "Quanto tempo leva para montar um roupeiro?", "r": "Varia muito pelo modelo e pelo número de portas e gavetas. Com a marca e a foto, damos uma estimativa no orçamento." },
+    { "p": "Vocês fixam móveis na parede?", "r": "Fixamos painéis e prateleiras simples quando a parede permite e você indica o local. Antes de furar, pergunte ao condomínio ou confira se não há cano ou fio passando no ponto." },
+    { "p": "O móvel de MDF aguenta ser desmontado de novo?", "r": "Na maioria das vezes, sim. Peças muito antigas ou que já foram montadas várias vezes podem ter furos gastos. Se for o caso, avisamos antes e sugerimos o reforço." }
+  ]
+}

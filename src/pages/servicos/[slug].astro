@@ -5,7 +5,7 @@ import Faq from '../../components/Faq.astro';
 import Img from '../../components/Img.astro';
 import { linkWhatsapp } from '../../config';
 import { SERVICOS, type Servico } from '../../data/servicos';
-import { BAIRROS, OUTROS_BAIRROS } from '../../data/bairros';
+import { BAIRROS } from '../../data/bairros';
 import { md } from '../../lib/md';
 
 const extras = import.meta.glob('../../data/servicos-extra/*.json', { eager: true }) as Record<string, { default: any }>;
@@ -25,7 +25,7 @@ const schema = [
     name: s.h1,
     serviceType: s.nome,
     description: s.descricao,
-    areaServed: { '@type': 'City', name: 'Curitiba' },
+    areaServed: { '@type': 'City', name: 'Passo Fundo' },
     provider: { '@id': new URL('/#empresa', Astro.site).href },
     url,
   },
@@ -45,7 +45,7 @@ const schema = [
   },
 ];
 const outros = SERVICOS.filter((o) => o.slug !== s.slug).slice(0, 3);
-const mensagem = `Olá! Vim pelo site e quero um orçamento de ${s.nome.toLowerCase()} em Curitiba.`;
+const mensagem = `Oi! Encontrei o site e quero um orçamento de ${s.nome.toLowerCase()} em Passo Fundo.`;
 ---
 <Base title={s.title} description={s.descricao} schema={schema} ogImage={s.imagem}>
   <section class="hero-pagina">
@@ -86,8 +86,8 @@ const mensagem = `Olá! Vim pelo site e quero um orçamento de ${s.nome.toLowerC
       </>
     ))}
 
-    <h2>{s.nome} em todos os bairros de Curitiba</h2>
-    <p>Atendemos todos os bairros da cidade e a região metropolitana. Veja como funciona {s.principal ? `o serviço de ${s.nome.toLowerCase()}` : 'o atendimento'} no seu bairro:</p>
+    <h2>{s.nome} nos bairros de Passo Fundo</h2>
+    <p>Atendemos a cidade inteira e as cidades vizinhas. Veja os detalhes {s.principal ? `de ${s.nome.toLowerCase()}` : 'do atendimento'} no seu bairro:</p>
   </section>
   <div class="wrap" style="margin-top:20px">
     <ul class="bairros-lista">

@@ -30,7 +30,7 @@ const schema = [
     '@type': 'Service',
     name: b.h1,
     serviceType: 'Frete e mudança',
-    areaServed: { '@type': 'Place', name: `${nomeCurto}, Curitiba - PR` },
+    areaServed: { '@type': 'Place', name: `${nomeCurto}, Passo Fundo - RS` },
     provider: { '@id': new URL('/#empresa', Astro.site).href },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -54,7 +54,7 @@ const schema = [
     ],
   },
 ];
-const mensagem = `Olá! Vim pelo site e quero um orçamento de frete/mudança ${local}, Curitiba.`;
+const mensagem = `Oi! Encontrei o site e quero um orçamento de mudança/frete ${local}, Passo Fundo.`;
 ---
 <Base title={b.titulo} description={b.descricao} schema={schema}>
   <section class="hero-pagina">

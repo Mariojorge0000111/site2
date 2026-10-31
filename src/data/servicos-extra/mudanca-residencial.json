@@ -1,0 +1,52 @@
+{
+  "secoes": [
+    {
+      "h2": "Quanto o mercado cobra por mudança em Passo Fundo",
+      "paragrafos": [
+        "Não publicamos tabela de preço própria. Cada mudança tem andar, distância e volume diferentes. Mas é útil ter uma referência antes de pedir orçamento.",
+        "O Guia de Mudanças publica uma tabela de 2026 para mudanças dentro de Passo Fundo. Os valores abaixo são dessa fonte externa. Não são os preços deste site e servem só como ponto de partida."
+      ],
+      "tabela": {
+        "cabecalho": ["Tipo de imóvel", "Faixa de referência (Guia de Mudanças 2026)"],
+        "linhas": [
+          ["Kitnet", "R$ 725 a R$ 1.625"],
+          ["Apartamento de 2 quartos", "R$ 1.450 a R$ 3.250"],
+          ["Apartamento de 3 quartos", "R$ 2.900 a R$ 6.175"]
+        ]
+      }
+    },
+    {
+      "h2": "O que faz o valor subir ou cair",
+      "paragrafos": [
+        "A faixa é larga porque cada detalhe pesa. Para entender cada item com calma, leia [quanto custa mudança em Passo Fundo](/blog/quanto-custa-mudanca-em-passo-fundo/)."
+      ],
+      "lista": [
+        "Quantidade de móveis e de caixas",
+        "Andares sem elevador, na saída e na chegada",
+        "Distância entre os endereços, ou viagem para outra cidade",
+        "Desmontagem, montagem e embalagem incluídas ou não",
+        "Necessidade de içamento ou de descer peças pela escada",
+        "Dia e horário escolhidos"
+      ]
+    },
+    {
+      "h2": "Prédios altos e condomínios novos",
+      "paragrafos": [
+        "Passo Fundo é um dos maiores mercados imobiliários do Rio Grande do Sul e tem muitos prédios em obra. Boa parte das mudanças hoje vai para condomínios novos, com regra própria de horário, elevador de serviço e área de carga.",
+        "Antes do dia, confirme com o síndico ou a portaria o horário permitido e reserve o elevador nos dois prédios. Se um móvel não couber, a gente avalia descer pela escada ou usar o [içamento de móveis](/servicos/icamento/)."
+      ]
+    },
+    {
+      "h2": "Mudança na chuva e no frio",
+      "paragrafos": [
+        "Em Passo Fundo chove em todos os meses do ano, e no inverno a geada é comum. Por isso a mudança residencial vai em caminhão baú fechado. Na hora de carregar, usamos lona e plástico nos estofados e colchões.",
+        "Nas manhãs de geada, calçada e escada externa ficam escorregadias. Às vezes vale começar um pouco mais tarde. Veja mais em [mudança no inverno e na chuva](/blog/mudanca-no-inverno-e-na-chuva-em-passo-fundo/)."
+      ]
+    }
+  ],
+  "faqExtra": [
+    { "p": "Os preços do Guia de Mudanças são os de vocês?", "r": "Não. São uma referência de mercado publicada por outra fonte. O nosso valor é passado depois que você manda a lista de móveis e os endereços." },
+    { "p": "Com quanto tempo de antecedência devo marcar?", "r": "Quanto antes, melhor, principalmente no fim e no começo do mês e nos períodos de matrícula das universidades. Mesmo assim, consulte para datas próximas." },
+    { "p": "Vocês levam plantas e vasos?", "r": "Vasos pequenos e médios, sim, bem presos e protegidos. Plantas grandes e frágeis sofrem com o frio e o vento; às vezes é melhor levar no próprio carro." }
+  ]
+}

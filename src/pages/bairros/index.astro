@@ -8,14 +8,14 @@ import { BAIRROS, OUTROS_BAIRROS } from '../../data/bairros';
 const ordenados = [...BAIRROS].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
 ---
 <Base
-  title="Bairros Atendidos: Frete e Mudança em Curitiba"
-  description="Frete, carreto e mudança em todos os bairros de Curitiba: Batel, Água Verde, Centro, Portão, Boqueirão, CIC, Ecoville e mais. Veja o seu bairro."
+  title="Bairros Atendidos: Mudança e Frete em Passo Fundo"
+  description="Mudança, frete e carreto em todos os bairros de Passo Fundo: Centro, Boqueirão, São Cristóvão, Petrópolis, Vera Cruz e mais. Veja o seu bairro."
 >
   <section class="hero-pagina">
     <div class="wrap">
       <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Bairros atendidos</nav>
       <h1>Bairros atendidos</h1>
-      <p class="lead" style="margin-top:18px">Fazemos frete, carreto, mudança residencial, mudança comercial e montagem de móveis em toda Curitiba. Escolha seu bairro para ver como funciona aí.</p>
+      <p class="lead" style="margin-top:18px">Mudança residencial, comercial, frete, carreto e montagem de móveis em toda Passo Fundo. Escolha o bairro para ver os detalhes de lá.</p>
     </div>
   </section>
 
@@ -24,7 +24,7 @@ const ordenados = [...BAIRROS].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-B
       {ordenados.map((b) => <li><a href={`/bairros/${b.slug}/`}>{b.nome}</a></li>)}
     </ul>
     <h2 style="margin:56px 0 12px;font-size:clamp(1.6rem,3vw,2.2rem)">Também atendemos</h2>
-    <p style="color:var(--suave);margin-bottom:20px">Fretes, carretos e mudanças em todos os outros bairros de Curitiba, entre eles:</p>
+    <p style="color:var(--suave);margin-bottom:20px">Fretes, carretos e mudanças nos demais bairros e setores de Passo Fundo, entre eles:</p>
     <p style="max-width:860px">{[...OUTROS_BAIRROS].sort((a, b) => a.localeCompare(b, 'pt-BR')).join(', ')}.</p>
     <p style="margin-top:20px;color:var(--suave)">Seu bairro não aparece? Atendemos a cidade inteira. É só chamar no WhatsApp.</p>
   </section>
@@ -32,13 +32,13 @@ const ordenados = [...BAIRROS].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-B
   <section class="secao secao-preta">
     <div class="wrap dividido">
       <div>
-        <h2>Região metropolitana também.</h2>
-        <p class="lead">Fretes e mudanças entre Curitiba e as cidades vizinhas, ou dentro delas.</p>
+        <h2>Cidades da região também.</h2>
+        <p class="lead">Fretes e mudanças entre Passo Fundo e as cidades vizinhas, pela RS-324, BR-285 e BR-153.</p>
         <ul class="bairros-lista" style="margin-top:28px">
           {REGIAO.map((c) => <li><a href="/contato/">{c}</a></li>)}
         </ul>
       </div>
-      <Img nome="curitiba" alt="Jardim Botânico de Curitiba com canteiros de flores" />
+      <Img nome="cidade" alt="Estrada cortando lavouras vista de cima" />
     </div>
   </section>
 

@@ -10,7 +10,7 @@ export const GET: APIRoute = ({ site }) => {
   const posts = Object.values(arquivos).map((p) => `- [${p.frontmatter.titulo}](${u(p.url.replace(/\/?$/, '/'))}): ${p.frontmatter.descricao}`);
   const txt = `# ${SITE.nome}
 
-> Serviço de fretes, carretos e mudanças em Curitiba (PR) e região metropolitana. Atende todos os bairros de Curitiba e cidades como ${REGIAO.slice(0, 6).join(', ')}. Orçamento pelo WhatsApp, com preço combinado antes do serviço. Horário: ${SITE.horario}.
+> Serviço de mudanças, fretes e carretos em Passo Fundo (RS) e cidades da região, como ${REGIAO.join(', ')}. Orçamento pelo WhatsApp, com preço combinado antes do serviço. Horário: ${SITE.horario}.
 
 ## Serviços
 ${SERVICOS.map((s) => `- [${s.h1}](${u(`/servicos/${s.slug}/`)}): ${s.resumo}`).join('\n')}

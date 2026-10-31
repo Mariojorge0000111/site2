@@ -1,0 +1,47 @@
+{
+  "secoes": [
+    {
+      "h2": "Carreto para compras de loja e de usados",
+      "paragrafos": [
+        "Boa parte dos pedidos de carreto em Passo Fundo nasce de uma compra. A loja do shopping não entrega naquele dia. O vendedor do grupo de usados mora do outro lado da cidade. A geladeira nova está pronta para retirar no depósito.",
+        "Nesses casos, você passa o endereço de retirada, o de entrega e uma foto do item. A gente confirma se o veículo comporta e combina o horário com você e, se for o caso, com o vendedor.",
+        "Juntamos dicas para não ter dor de cabeça nessas retiradas no guia de [carreto para compras em Passo Fundo](/blog/carreto-para-compras-em-passo-fundo/)."
+      ]
+    },
+    {
+      "h2": "Itens mais comuns num carreto",
+      "paragrafos": [
+        "Cada item tem um cuidado diferente. A tabela mostra o que pedimos para preparar antes da equipe chegar."
+      ],
+      "tabela": {
+        "cabecalho": ["Item", "Como preparar", "Precisa de ajudante?"],
+        "linhas": [
+          ["Geladeira", "Desligar e secar na noite anterior", "Quase sempre"],
+          ["Máquina de lavar", "Esvaziar a água e prender o tambor, se tiver trava", "Em escada, sim"],
+          ["Sofá", "Medir porta e elevador", "Sofá grande, sim"],
+          ["Cama e colchão", "Desmontar a cama ou pedir desmontagem", "Depende do andar"],
+          ["Fogão e botijão", "Desligar o gás; botijão vai separado e em pé", "Em geral não"]
+        ]
+      }
+    },
+    {
+      "h2": "Carreto de estudante entre kitnets",
+      "paragrafos": [
+        "Passo Fundo recebe muitos estudantes da UPF, da Atitus, da UFFS e do IFSul. Quem troca de kitnet costuma ter pouco móvel: cama, colchão, frigobar, mesa e algumas caixas. Isso cabe num carreto.",
+        "A procura aumenta perto do início dos semestres, em fevereiro e março e de novo entre julho e agosto. Se puder, peça com alguns dias de antecedência nesse período. Para quem vem de fora ou vai embora, o texto sobre [mudança de estudante em Passo Fundo](/blog/mudanca-de-estudante-em-passo-fundo/) ajuda a planejar."
+      ]
+    },
+    {
+      "h2": "Quando o carreto não basta",
+      "paragrafos": [
+        "Se a lista passou de um quarto, ou se há móveis grandes para desmontar, o carreto deixa de ser a melhor escolha. Pode sair mais caro fazer duas viagens do que uma só num veículo maior.",
+        "Nesse caso indicamos o [frete](/servicos/frete/) ou a mudança completa. Você decide com o valor de cada opção na mão."
+      ]
+    }
+  ],
+  "faqExtra": [
+    { "p": "O carreto atende no Centro?", "r": "Sim. O veículo do carreto é pequeno, fica bem abaixo das 7 toneladas da restrição do Decreto 78/2021 e para com mais facilidade nas ruas do Centro." },
+    { "p": "Vocês levam botijão de gás?", "r": "Levamos o botijão vazio ou cheio, separado dos outros itens, em pé e preso. Avise no pedido para reservarmos o espaço." },
+    { "p": "Preciso estar no local de retirada?", "r": "Não necessariamente. Se o vendedor ou a loja liberar o item, basta você estar na entrega. Combine com a gente quem vai receber a equipe em cada ponto." }
+  ]
+}

@@ -8,12 +8,12 @@ import { SERVICOS } from '../data/servicos';
 import { BAIRROS } from '../data/bairros';
 
 const faq = [
-  { p: 'Quanto custa um frete em Curitiba?', r: 'O valor depende da distância, do volume, do tipo de veículo, de escadas e do número de ajudantes. Você manda a lista de itens e os endereços e recebe o preço fechado antes de confirmar.' },
-  { p: 'Com quanto tempo de antecedência devo agendar?', r: 'Fretes pequenos muitas vezes saem no mesmo dia ou no dia seguinte. Para mudanças completas, agende com uma a duas semanas de antecedência, principalmente no fim e no início do mês.' },
-  { p: 'Vocês desmontam e montam os móveis?', r: 'Sim. Camas, guarda-roupas, mesas, racks e estantes podem ser desmontados e montados no novo endereço. É só informar no orçamento.' },
-  { p: 'Atendem fora de Curitiba?', r: `Sim. Além de todos os bairros de Curitiba, atendemos a região metropolitana, como ${REGIAO.slice(0, 5).join(', ')}. Viagens para outras cidades são combinadas no orçamento.` },
-  { p: 'Preciso embalar tudo antes?', r: 'No frete simples, sim. Na mudança completa você pode incluir a embalagem, com caixas, plástico-bolha e manta para os móveis.' },
-  { p: 'Como faço para pedir um orçamento?', r: 'Pelo WhatsApp. Mande o que precisa levar, os endereços de origem e destino, se há escada ou elevador e a data desejada.' },
+  { p: 'Como é calculado o valor de uma mudança em Passo Fundo?', r: 'Pelo volume que vai ser levado, a distância entre os endereços, o tipo de veículo, a quantidade de ajudantes e o acesso (escada, elevador, distância até a porta). Com a lista de itens e os dois endereços, o valor é passado antes de você fechar.' },
+  { p: 'Vocês fazem frete para Marau, Carazinho e outras cidades?', r: `Sim. Além de todos os bairros de Passo Fundo, fazemos fretes e mudanças para ${REGIAO.join(', ')} e outras cidades da região. A distância entra no orçamento.` },
+  { p: 'Caminhão pode entrar no Centro de Passo Fundo?', r: 'Caminhões com carga acima de 7 toneladas têm circulação restrita na Av. Brasil e em pontos do Centro (Decreto Municipal 78/2021). Para mudanças no Centro, escolhemos o veículo adequado e verificamos se é preciso pedir autorização à prefeitura.' },
+  { p: 'E se chover no dia da mudança?', r: 'Em Passo Fundo chove o ano todo. Os móveis vão protegidos com manta e plástico, e colchões e eletrônicos recebem cobertura extra. Se o tempo estiver muito ruim, dá para remarcar combinando antes.' },
+  { p: 'Atendem estudantes que vão morar perto da UPF?', r: 'Sim. Mudança de kitnet e de república costuma caber num carreto, que é a opção mais econômica. Nas semanas de início de semestre a procura sobe, então vale agendar cedo.' },
+  { p: 'Como peço um orçamento?', r: 'Pelo WhatsApp: mande o que vai levar (fotos ajudam), os endereços de saída e de chegada, o andar e se tem elevador, e a data que você precisa.' },
 ];
 
 const schemaFaq = {
@@ -21,85 +21,63 @@ const schemaFaq = {
   '@type': 'FAQPage',
   mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.p, acceptedAnswer: { '@type': 'Answer', text: f.r } })),
 };
-
-const [grande1, grande2, ...demais] = [
-  SERVICOS.find((s) => s.slug === 'frete')!,
-  SERVICOS.find((s) => s.slug === 'mudanca-residencial')!,
-  ...SERVICOS.filter((s) => !['frete', 'mudanca-residencial', 'embalagem', 'icamento'].includes(s.slug)),
-];
-const destaqueBairros = ['batel', 'agua-verde', 'centro', 'bigorrilho', 'portao', 'cabral', 'mossungue', 'boqueirao', 'cic', 'sitio-cercado', 'santa-felicidade', 'cajuru', 'xaxim', 'juveve', 'reboucas', 'pinheirinho'];
-const bairrosHome = destaqueBairros.map((s) => BAIRROS.find((b) => b.slug === s)).filter((b): b is NonNullable<typeof b> => Boolean(b));
 ---
 <Base
-  title="Frete e Mudança em Curitiba | Fretes e Mudanças Curitiba"
-  description="Frete, carreto e mudança em Curitiba e região: residencial, comercial e montagem de móveis. Preço combinado antes. Peça seu orçamento pelo WhatsApp."
-  preloadImg="hero"
+  title="Mudança e Frete em Passo Fundo | Mudanças e Fretes Passo Fundo"
+  description="Mudanças, fretes e carretos em Passo Fundo e região: residencial, comercial, montagem de móveis e frete para Marau e Carazinho. Orçamento pelo WhatsApp."
   schema={schemaFaq}
+  preloadImg="hero"
 >
-  <section class="hero centro">
-    <div class="wrap">
-      <h1>Sua mudança em Curitiba, no horário e sem susto.</h1>
-      <p class="lead">Fretes, carretos e mudanças em todos os bairros de Curitiba e na região metropolitana. Você sabe o preço antes, e seus móveis chegam inteiros.</p>
-      <div class="acoes">
-        <a class="btn" href={linkWhatsapp()} target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
-        <a class="link" href="/servicos/">Ver serviços</a>
+  <section class="hero">
+    <div class="wrap dividido" style="align-items:center">
+      <div>
+        <h1 style="font-size:clamp(2.4rem,5.6vw,4.4rem)">Mudanças e fretes em Passo Fundo.</h1>
+        <p class="lead">Da kitnet perto da UPF ao apartamento no Centro, da casa no Boqueirão até Marau ou Carazinho. Você recebe o valor antes, e os móveis viajam protegidos da chuva.</p>
+        <div class="acoes">
+          <a class="btn" href={linkWhatsapp()} target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+          <a class="link" href="/servicos/">Conhecer os serviços</a>
+        </div>
       </div>
-      <div class="hero-foto">
-        <Img nome="hero" alt="Carregador levando caixas com carrinho até a van de mudança" prioridade sizes="(max-width: 1220px) 100vw, 1180px" />
-      </div>
+      <Img nome="hero" alt="Dois carregadores colocando um sofá numa van de mudança" prioridade sizes="(max-width: 760px) 100vw, 50vw" />
     </div>
   </section>
 
   <section class="secao">
     <div class="wrap">
       <div class="cabeca">
-        <h2>Do carreto à casa inteira.</h2>
-        <p class="lead">Escolha o serviço pelo tamanho do que você precisa levar. Na dúvida, mande fotos que a gente indica o certo.</p>
+        <h2>O que a gente leva.</h2>
+        <p class="lead">Escolha pelo tamanho da mudança. Se ficar em dúvida, mande fotos dos itens que indicamos o serviço certo.</p>
       </div>
-      <div class="servicos-grade">
-        {[grande1, grande2].map((s) => (
-          <a class="tile tile-grande" href={`/servicos/${s.slug}/`}>
-            <Img nome={s.imagem} alt={s.imagemAlt} />
-            <div class="tile-texto"><h3>{s.nome}</h3><p>{s.resumo}</p></div>
-          </a>
-        ))}
-        {demais.map((s) => (
-          <a class="tile" href={`/servicos/${s.slug}/`}>
-            <Img nome={s.imagem} alt={s.imagemAlt} />
-            <div class="tile-texto"><h3>{s.nome}</h3><p>{s.resumo}</p></div>
+      <div class="cards">
+        {SERVICOS.map((s) => (
+          <a class="card" href={`/servicos/${s.slug}/`}>
+            <Img nome={s.imagem} alt={s.imagemAlt} sizes="(max-width: 760px) 100vw, 33vw" />
+            <h3>{s.nome}</h3>
+            <p>{s.resumo}</p>
           </a>
         ))}
       </div>
-      <p class="acoes"><a class="link" href="/servicos/">Todos os serviços, incluindo içamento e embalagem</a></p>
     </div>
   </section>
 
   <section class="secao secao-preta">
     <div class="wrap">
       <div class="cabeca">
-        <h2>O que você pode esperar.</h2>
-        <p class="lead">Quatro compromissos que valem para qualquer frete, do menor ao maior.</p>
+        <h2>Mudar em Passo Fundo tem detalhes.</h2>
+        <p class="lead">Três coisas que a gente considera em todo orçamento na cidade.</p>
       </div>
-      <div class="compromissos">
+      <div class="compromissos" style="grid-template-columns:repeat(3,1fr)">
         <div>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffc800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          <h3>Preço combinado antes</h3>
-          <p>O valor é passado por escrito antes de você confirmar. Sem cobrança surpresa no dia.</p>
+          <h3>Restrição no Centro</h3>
+          <p>Caminhões acima de 7 t têm circulação restrita na Av. Brasil e em pontos do Centro. Escolhemos o veículo certo e verificamos se é preciso pedir autorização.</p>
         </div>
         <div>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffc800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <h3>Horário marcado</h3>
-          <p>Data e horário confirmados com antecedência, respeitando as regras do seu condomínio.</p>
+          <h3>Chuva o ano inteiro</h3>
+          <p>A cidade tem chuva distribuída em todos os meses e geada no inverno. Manta, plástico e cobertura extra para colchões e eletrônicos fazem parte do serviço.</p>
         </div>
         <div>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffc800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg>
-          <h3>Móveis protegidos</h3>
-          <p>Mantas, cintas e carrinho de carga. Cada móvel viaja preso e protegido.</p>
-        </div>
-        <div>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffc800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
-          <h3>Atendimento direto</h3>
-          <p>Você fala direto pelo WhatsApp, do orçamento até a entrega do último móvel.</p>
+          <h3>Calendário das universidades</h3>
+          <p>No início dos semestres, a procura por carreto de kitnet perto da UPF, da UFFS e da Atitus aumenta. Quem agenda antes consegue o melhor horário.</p>
         </div>
       </div>
     </div>
@@ -107,12 +85,12 @@ const bairrosHome = destaqueBairros.map((s) => BAIRROS.find((b) => b.slug === s)
 
   <section class="secao">
     <div class="wrap">
-      <div class="cabeca"><h2>Como funciona.</h2></div>
+      <div class="cabeca"><h2>Do orçamento à entrega.</h2></div>
       <ol class="passos">
-        <li><h3>Você conta o que precisa</h3><p>Itens, endereços e data, pelo WhatsApp. Fotos ajudam muito.</p></li>
-        <li><h3>Recebe o orçamento</h3><p>Valor fechado, considerando veículo, distância, escadas e ajudantes.</p></li>
-        <li><h3>Agenda o dia</h3><p>Data e horário confirmados, já alinhados com o condomínio.</p></li>
-        <li><h3>A gente leva</h3><p>Carregamento, transporte e descarga no lugar certo.</p></li>
+        <li><h3>Mande os detalhes</h3><p>Itens, fotos, endereços, andar e data, tudo pelo WhatsApp.</p></li>
+        <li><h3>Receba o valor</h3><p>Preço combinado antes, já com veículo, ajudantes e acesso considerados.</p></li>
+        <li><h3>Marque o dia</h3><p>Data e horário confirmados, alinhados com o condomínio quando houver.</p></li>
+        <li><h3>Mudança feita</h3><p>Carga protegida, transporte e descarga em cada cômodo.</p></li>
       </ol>
     </div>
   </section>
@@ -120,22 +98,21 @@ const bairrosHome = destaqueBairros.map((s) => BAIRROS.find((b) => b.slug === s)
   <section class="secao secao-cinza">
     <div class="wrap dividido">
       <div>
-        <h2>Curitiba inteira, bairro por bairro.</h2>
-        <p class="lead">Cada bairro tem seu jeito: condomínios com regras no Batel e no Ecoville, prédios sem elevador no Centro, sobrados com escada estreita na região sul. A gente leva isso em conta no orçamento.</p>
+        <h2>Todos os bairros e as cidades vizinhas.</h2>
+        <p class="lead">Atendemos Passo Fundo inteira e as cidades da região, pela RS-324, BR-285 e BR-153.</p>
+        <ul class="bairros-lista" style="margin-top:28px">
+          {BAIRROS.map((b) => <li><a href={`/bairros/${b.slug}/`}>{b.nome}</a></li>)}
+        </ul>
+        <p style="margin-top:22px;color:var(--suave)">Cidades da região: {REGIAO.join(', ')}.</p>
         <p class="acoes"><a class="btn btn-preto" href="/bairros/">Ver bairros atendidos</a></p>
       </div>
-      <Img nome="curitiba-2" alt="Prédios de Curitiba vistos a partir de um parque" />
-    </div>
-    <div class="wrap" style="margin-top:48px">
-      <ul class="bairros-lista">
-        {bairrosHome.map((b) => <li><a href={`/bairros/${b.slug}/`}>{b.nome}</a></li>)}
-      </ul>
+      <Img nome="cidade" alt="Estrada cortando lavouras vista de cima" />
     </div>
   </section>
 
   <section class="secao">
     <div class="texto">
-      <div class="cabeca"><h2>Perguntas frequentes</h2></div>
+      <div class="cabeca"><h2>Dúvidas comuns</h2></div>
       <Faq itens={faq} />
     </div>
   </section>

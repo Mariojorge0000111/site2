@@ -18,9 +18,8 @@ export interface Bairro {
 
 // Ordem de exibição (bairros mais procurados primeiro)
 const ORDEM = [
-  'centro', 'batel', 'agua-verde', 'bigorrilho', 'portao', 'cabral', 'mossungue', 'juveve', 'reboucas',
-  'cic', 'boqueirao', 'sitio-cercado', 'cajuru', 'xaxim', 'pinheirinho', 'uberaba', 'santa-felicidade',
-  'jardim-das-americas',
+  'centro', 'boqueirao', 'sao-cristovao', 'petropolis', 'vera-cruz', 'vila-rodrigues', 'sao-jose',
+  'lucas-araujo', 'santa-marta', 'annes',
 ];
 
 const arquivos = import.meta.glob('./bairros/*.json', { eager: true }) as Record<string, { default: Bairro }>;
@@ -30,11 +29,9 @@ export const BAIRROS: Bairro[] = Object.values(arquivos)
 
 export const bairro = (slug: string) => BAIRROS.find((b) => b.slug === slug);
 
-// Bairros atendidos que não têm página própria (aparecem listados em /bairros/)
+// Bairros atendidos sem página própria (listados em /bairros/). Nomes dos setores do Plano Diretor.
 export const OUTROS_BAIRROS = [
-  'São Francisco', 'Centro Cívico', 'Mercês', 'Prado Velho', 'Jardim Botânico', 'Alto da XV', 'Cristo Rei',
-  'Hugo Lange', 'Alto da Glória', 'Bacacheri', 'Boa Vista', 'Santa Cândida', 'Campo Comprido', 'Fazendinha',
-  'Novo Mundo', 'Capão Raso', 'Hauer', 'Tatuquara', 'Ahú', 'Seminário', 'Vila Izabel', 'Santa Quitéria',
-  'Campina do Siqueira', 'Pilarzinho', 'São Lourenço', 'Tarumã', 'Capão da Imbuia', 'Guabirotuba',
-  'Alto Boqueirão', 'Umbará', 'Campo de Santana', 'Barreirinha', 'Abranches', 'Santo Inácio', 'Orleans',
+  'Vila Vergueiro', 'São Luiz Gonzaga', 'Vila Cruzeiro', 'Integração', 'Victor Issler', 'Roselândia',
+  'Vila Mattos', 'José Alexandre Zachia', 'Valinhos', 'Vila Luiza', 'Santa Maria', 'Planaltina',
+  'Nenê Graeff', 'Hípica', 'Dona Eliza', 'Cidade Universitária', 'Jardim América', 'Nossa Senhora Aparecida',
 ];

@@ -1,0 +1,53 @@
+{
+  "secoes": [
+    {
+      "h2": "Como planejamos uma mudança comercial",
+      "paragrafos": [
+        "Mudança de empresa não se resolve só no dia. O que dá certo é o que foi combinado antes. Seguimos uma ordem simples:"
+      ],
+      "lista": [
+        "Levantamento do volume, por visita ou chamada de vídeo",
+        "Definição das etapas: o que sai primeiro e o que precisa chegar funcionando",
+        "Etiquetas por setor, sala e posição no novo espaço",
+        "Conversa com o condomínio, o shopping ou o centro comercial sobre horários",
+        "Verificação da regra de caminhão quando o endereço é no Centro",
+        "Execução e montagem do mobiliário no destino"
+      ]
+    },
+    {
+      "h2": "Etapas e tempo estimado de cada uma",
+      "paragrafos": [
+        "O tempo real depende do tamanho da empresa. A tabela mostra como dividimos o trabalho, para você planejar quando cada setor vai parar."
+      ],
+      "tabela": {
+        "cabecalho": ["Etapa", "Quem faz", "Quando"],
+        "linhas": [
+          ["Separar documentos e esvaziar gavetas", "Sua equipe", "Dias antes"],
+          ["Desligar computadores e fazer backup", "Sua equipe de TI", "Véspera"],
+          ["Embalar, desmontar e carregar", "Nossa equipe", "Dia da mudança"],
+          ["Montar mesas e posicionar móveis", "Nossa equipe", "Dia da mudança ou seguinte"],
+          ["Religar equipamentos", "Sua equipe de TI", "Depois da montagem"]
+        ]
+      }
+    },
+    {
+      "h2": "Empresas no Centro e na Av. Brasil",
+      "paragrafos": [
+        "Grande parte dos escritórios, consultórios e lojas de Passo Fundo está no Centro. Ali vale o Decreto 78/2021, que restringe caminhões com carga acima de 7 toneladas na Av. Brasil e em pontos do Centro.",
+        "Quando a mudança é grande, a gente ajuda a verificar se a autorização da Secretaria de Segurança é necessária ou se dá para dividir em veículos menores. Saiba mais sobre a [restrição de caminhão no Centro](/blog/caminhao-no-centro-de-passo-fundo-restricao/)."
+      ]
+    },
+    {
+      "h2": "Mudança para a região e entre bairros",
+      "paragrafos": [
+        "Algumas empresas saem do Centro para galpões perto das perimetrais ou das rodovias BR-285 e BR-153. Outras vão para cidades vizinhas, como Marau e Carazinho. O planejamento é o mesmo, com a viagem a mais no meio.",
+        "Para móveis de escritório que precisam ser desmontados, veja o serviço de [montagem de móveis](/servicos/montagem-de-moveis/). Para pedir o levantamento, use a página de [contato](/contato/)."
+      ]
+    }
+  ],
+  "faqExtra": [
+    { "p": "Vocês fazem mudança de consultório com equipamentos?", "r": "Transportamos móveis, arquivos e equipamentos comuns de escritório. Equipamentos médicos sensíveis devem ser desmontados e preparados pelo fabricante ou pelo técnico responsável. Avise no pedido." },
+    { "p": "Dá para mudar a empresa em etapas, em dias diferentes?", "r": "Sim. Para não parar tudo de uma vez, dá para mudar um setor por dia. Cada etapa entra no orçamento." },
+    { "p": "Levam estoque de loja?", "r": "Sim. Pedimos a quantidade aproximada de volumes e se há itens frágeis ou pesados, para escolher o veículo e o número de ajudantes." }
+  ]
+}
