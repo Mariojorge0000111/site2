@@ -1,0 +1,113 @@
+---
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Faq from '../../components/Faq.astro';
+import Img from '../../components/Img.astro';
+import { linkWhatsapp } from '../../config';
+import { BAIRROS, bairro as achar, type Bairro } from '../../data/bairros';
+import { PRINCIPAIS } from '../../data/servicos';
+
+export function getStaticPaths() {
+  return BAIRROS.map((b) => ({ params: { slug: b.slug }, props: { b } }));
+}
+const { b } = Astro.props as { b: Bairro };
+const url = new URL(`/bairros/${b.slug}/`, Astro.site).href;
+const local = `${b.prep} ${b.nome}`;
+const nomeCurto = b.nome.replace(/ \(.*\)$/, '');
+const proximos = b.proximos.map(achar).filter((x): x is Bairro => Boolean(x) && x!.slug !== b.slug);
+
+const titulo: Record<string, string> = {
+  frete: `Frete ${local}`,
+  carreto: `Carreto ${local}`,
+  'mudanca-residencial': `Mudança residencial ${local}`,
+  'mudanca-comercial': `Mudança comercial ${local}`,
+  'montagem-de-moveis': `Montagem de móveis ${local}`,
+};
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: b.h1,
+    serviceType: 'Frete e mudança',
+    areaServed: { '@type': 'Place', name: `${nomeCurto}, Curitiba - PR` },
+    provider: { '@id': new URL('/#empresa', Astro.site).href },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `Serviços ${local}`,
+      itemListElement: PRINCIPAIS.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: titulo[s.slug] } })),
+    },
+    url,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: b.faq.map((f) => ({ '@type': 'Question', name: f.p, acceptedAnswer: { '@type': 'Answer', text: f.r } })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: new URL('/', Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: 'Bairros atendidos', item: new URL('/bairros/', Astro.site).href },
+      { '@type': 'ListItem', position: 3, name: nomeCurto, item: url },
+    ],
+  },
+];
+const mensagem = `Olá! Vim pelo site e quero um orçamento de frete/mudança ${local}, Curitiba.`;
+---
+<Base title={b.titulo} description={b.descricao} schema={schema}>
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / <a href="/bairros/">Bairros atendidos</a> / {nomeCurto}</nav>
+      <h1>{b.h1}</h1>
+      <p class="lead" style="margin-top:18px">{b.sobre}</p>
+      <div class="acoes"><a class="btn" href={linkWhatsapp(mensagem)} target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a></div>
+    </div>
+  </section>
+
+  <section class="texto conteudo" style="padding-bottom:40px">
+    {b.secoes.map((s) => (
+      <>
+        <h2>{s.h2}</h2>
+        {s.paragrafos.map((p) => <p>{p}</p>)}
+        {s.lista && <ul>{s.lista.map((i) => <li>{i}</li>)}</ul>}
+      </>
+    ))}
+  </section>
+
+  <section class="wrap">
+    <h2 style="margin:24px 0 8px">Serviços {local}</h2>
+    {PRINCIPAIS.map((s) => (
+      <article class="servico-bairro" id={s.slug}>
+        <Img nome={s.imagem} alt={s.imagemAlt} sizes="260px" />
+        <div>
+          <h3 style="font-size:clamp(1.3rem,2.4vw,1.7rem);margin-bottom:10px">{titulo[s.slug]}</h3>
+          <p>{b.servicos[s.slug]}</p>
+          <p><a class="link" href={`/servicos/${s.slug}/`}>{s.h1}: como funciona</a></p>
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <section class="secao">
+    <div class="texto">
+      <h2 style="margin-bottom:28px">Perguntas sobre mudança {local}</h2>
+      <Faq itens={b.faq} />
+    </div>
+  </section>
+
+  {proximos.length > 0 && (
+    <section class="secao secao-cinza">
+      <div class="wrap">
+        <h2 style="margin-bottom:28px">Bairros vizinhos</h2>
+        <ul class="bairros-lista">
+          {proximos.map((p) => <li><a href={`/bairros/${p.slug}/`}>Frete e mudança {p.prep} {p.nome}</a></li>)}
+          <li><a href="/bairros/">Todos os bairros</a></li>
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <Cta titulo={`Mudança ${local}? Peça seu orçamento.`} mensagem={mensagem} />
+</Base>

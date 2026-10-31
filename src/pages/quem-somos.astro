@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+import Img from '../components/Img.astro';
+---
+<Base
+  title="Quem Somos: fretes e mudanças em Curitiba"
+  description="Conheça a forma de trabalhar da Fretes e Mudanças Curitiba: preço combinado antes, horário marcado, móveis protegidos e atendimento direto pelo WhatsApp."
+  ogImage="sobre"
+>
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Quem somos</nav>
+      <h1>Mudança é sobre confiança.</h1>
+      <p class="lead" style="margin-top:18px">Quando você contrata um frete, entrega para outra pessoa tudo o que tem dentro de casa. A gente trabalha para que esse dia seja simples.</p>
+    </div>
+  </section>
+  <div class="post-capa"><Img nome="sobre" alt="Carregador levando um sofá por uma rua ensolarada" prioridade /></div>
+
+  <section class="texto conteudo">
+    <p>Somos um serviço de fretes, carretos e mudanças em Curitiba e região metropolitana. Atendemos de quem precisa levar uma geladeira até quem está mudando a casa inteira ou o escritório da empresa.</p>
+    <p>A maior reclamação de quem contrata frete na cidade é a mesma: preço que muda na hora, caminhão que atrasa e móvel que chega riscado. Montamos o nosso jeito de trabalhar justamente para evitar essas três coisas.</p>
+
+    <h2>Como a gente trabalha</h2>
+    <ul class="check">
+      <li><strong>Orçamento antes, por escrito.</strong> Você recebe o valor fechado pelo WhatsApp, considerando veículo, distância, escadas e ajudantes.</li>
+      <li><strong>Horário combinado e cumprido.</strong> A data é confirmada com antecedência, já alinhada às regras do condomínio.</li>
+      <li><strong>Proteção em cada móvel.</strong> Mantas, cintas e carrinho de carga em todo transporte.</li>
+      <li><strong>Atenção aos detalhes de Curitiba.</strong> Prédios sem elevador, condomínios com agenda, ruas estreitas e chuva fazem parte do planejamento.</li>
+      <li><strong>Atendimento direto.</strong> Você fala com quem organiza a sua mudança, do primeiro contato à entrega.</li>
+    </ul>
+
+    <h2>O que nos move</h2>
+    <p>Acreditamos que um bom frete é aquele em que você nem precisa se preocupar: o veículo chega na hora, os móveis vão protegidos e o preço é o que foi combinado. É isso que buscamos em cada atendimento.</p>
+    <p>Quer saber mais sobre as pessoas por trás do serviço? Veja a <a href="/equipe/">nossa equipe</a> ou conheça os <a href="/servicos/">serviços</a>.</p>
+  </section>
+
+  <div style="height:64px"></div>
+  <Cta />
+</Base>

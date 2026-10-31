@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+import Img from '../components/Img.astro';
+
+const funcoes = [
+  { img: 'equipe-atendimento', alt: 'Atendente sorrindo ao telefone', titulo: 'Atendimento e orçamento', texto: 'Recebe o seu pedido pelo WhatsApp, entende o que precisa ser levado, monta o orçamento e agenda a data com você.' },
+  { img: 'equipe-motorista', alt: 'Motorista acenando da janela do caminhão', titulo: 'Motoristas', texto: 'Conhecem os caminhos de Curitiba e da região metropolitana, e cuidam da amarração da carga para que nada se mova no trajeto.' },
+  { img: 'equipe-ajudantes', alt: 'Dois carregadores levando caixas por uma sala', titulo: 'Ajudantes', texto: 'Carregam e descarregam com carrinho de carga e mantas, em escadas, elevadores e corredores apertados.' },
+  { img: 'equipe-montador', alt: 'Montador ajustando um móvel com ferramentas', titulo: 'Montadores', texto: 'Desmontam guarda-roupas, camas e estantes, guardam as ferragens identificadas e montam tudo de novo no novo endereço.' },
+];
+---
+<Base
+  title="Nossa Equipe de Fretes e Mudanças em Curitiba"
+  description="Conheça as funções da equipe de fretes e mudanças em Curitiba: atendimento, motoristas, ajudantes e montadores de móveis. Orçamento pelo WhatsApp."
+  ogImage="equipe-ajudantes"
+>
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Equipe</nav>
+      <h1>Quem cuida da sua mudança.</h1>
+      <p class="lead" style="margin-top:18px">Cada mudança passa por quatro funções. Cada uma tem um papel claro, para que nada fique para trás.</p>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:96px">
+    <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+      {funcoes.map((f) => (
+        <div class="card">
+          <Img nome={f.img} alt={f.alt} />
+          <h3>{f.titulo}</h3>
+          <p>{f.texto}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="secao secao-preta">
+    <div class="texto">
+      <h2>O combinado de toda a equipe</h2>
+      <ul class="check" style="margin-top:28px;color:#e5e5ea">
+        <li>Chegar no horário marcado.</li>
+        <li>Proteger cada móvel antes de carregar.</li>
+        <li>Tratar a sua casa e o seu condomínio com respeito.</li>
+        <li>Conferir com você, no final, que tudo chegou e está no lugar.</li>
+      </ul>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

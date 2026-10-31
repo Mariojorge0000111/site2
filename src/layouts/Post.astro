@@ -1,0 +1,74 @@
+---
+import Base from './Base.astro';
+import Cta from '../components/Cta.astro';
+import { SITE } from '../config';
+
+const { frontmatter } = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site).href;
+const data = new Date(frontmatter.data + 'T12:00:00');
+const dataBR = data.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' });
+const nomeImg = frontmatter.imagem?.replace('/images/', '').replace('.webp', '');
+
+// Outros artigos para "leia também"
+const arquivos = import.meta.glob('../pages/blog/*.md', { eager: true }) as Record<string, any>;
+const outros = Object.values(arquivos)
+  .filter((p) => p.url && !url.endsWith(p.url.replace(/\/?$/, '/')))
+  .slice(0, 3);
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: frontmatter.titulo,
+    description: frontmatter.descricao,
+    image: frontmatter.imagem ? new URL(frontmatter.imagem, Astro.site).href : undefined,
+    datePublished: frontmatter.data,
+    dateModified: frontmatter.atualizado ?? frontmatter.data,
+    author: { '@type': 'Organization', name: SITE.nome },
+    publisher: { '@id': new URL('/#empresa', Astro.site).href },
+    mainEntityOfPage: url,
+    inLanguage: 'pt-BR',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: new URL('/', Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: new URL('/blog/', Astro.site).href },
+      { '@type': 'ListItem', position: 3, name: frontmatter.titulo, item: url },
+    ],
+  },
+];
+---
+<Base title={frontmatter.titulo} description={frontmatter.descricao} schema={schema} ogType="article" ogImage={nomeImg ?? 'hero'}>
+  <section class="hero-pagina">
+    <div class="texto">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / <a href="/blog/">Blog</a></nav>
+      <h1 style="font-size:clamp(2.1rem,5vw,3.4rem)">{frontmatter.titulo}</h1>
+      <p class="post-meta"><time datetime={frontmatter.data}>{dataBR}</time></p>
+    </div>
+  </section>
+  {frontmatter.imagem && (
+    <div class="post-capa">
+      <img src={frontmatter.imagem} alt={frontmatter.imagemAlt ?? ''} width="1200" height="800" fetchpriority="high" />
+    </div>
+  )}
+  <article class="texto conteudo">
+    <slot />
+  </article>
+
+  <section class="secao">
+    <div class="wrap">
+      <h2 style="margin-bottom:32px">Leia também</h2>
+      <div class="cards">
+        {outros.map((p) => (
+          <a class="card" href={p.url.replace(/\/?$/, '/')}>
+            {p.frontmatter.imagem && <img src={p.frontmatter.imagem} alt={p.frontmatter.imagemAlt ?? ''} width="1200" height="800" loading="lazy" />}
+            <h3>{p.frontmatter.titulo}</h3>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <Cta />
+</Base>

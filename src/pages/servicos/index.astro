@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Img from '../../components/Img.astro';
+import { SERVICOS } from '../../data/servicos';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: SERVICOS.map((s, i) => ({ '@type': 'ListItem', position: i + 1, name: s.h1, url: new URL(`/servicos/${s.slug}/`, Astro.site).href })),
+};
+---
+<Base
+  title="Serviços de Frete e Mudança em Curitiba"
+  description="Frete, carreto, mudança residencial e comercial, desmontagem e montagem de móveis, içamento e embalagem em Curitiba e região. Orçamento pelo WhatsApp."
+  schema={schema}
+>
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Serviços</nav>
+      <h1>Serviços</h1>
+      <p class="lead" style="margin-top:18px">Tudo o que você precisa para levar seus móveis de um endereço a outro em Curitiba, do carreto de uma geladeira à mudança de um escritório inteiro.</p>
+    </div>
+  </section>
+
+  {SERVICOS.map((s, i) => (
+    <section class={`secao ${i % 2 === 1 ? 'secao-cinza' : ''}`}>
+      <div class="wrap dividido">
+        <div style={i % 2 === 1 ? 'order:2' : ''}>
+          <h2>{s.h1}</h2>
+          <p class="lead">{s.resumo}</p>
+          <p style="margin-top:20px">{s.intro[0]}</p>
+          <p class="acoes"><a class="btn btn-preto" href={`/servicos/${s.slug}/`}>Saiba mais sobre {s.nome.toLowerCase()}</a></p>
+        </div>
+        <Img nome={s.imagem} alt={s.imagemAlt} />
+      </div>
+    </section>
+  ))}
+
+  <Cta />
+</Base>
