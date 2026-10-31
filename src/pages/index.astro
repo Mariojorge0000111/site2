@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+import Faq from '../components/Faq.astro';
+import Img from '../components/Img.astro';
+import { linkWhatsapp, REGIAO } from '../config';
+import { SERVICOS } from '../data/servicos';
+import { BAIRROS } from '../data/bairros';
+
+const faq = [
+  { p: 'Como é calculado o valor de uma mudança em Passo Fundo?', r: 'Pelo volume que vai ser levado, a distância entre os endereços, o tipo de veículo, a quantidade de ajudantes e o acesso (escada, elevador, distância até a porta). Com a lista de itens e os dois endereços, o valor é passado antes de você fechar.' },
+  { p: 'Vocês fazem frete para Marau, Carazinho e outras cidades?', r: `Sim. Além de todos os bairros de Passo Fundo, fazemos fretes e mudanças para ${REGIAO.join(', ')} e outras cidades da região. A distância entra no orçamento.` },
+  { p: 'Caminhão pode entrar no Centro de Passo Fundo?', r: 'Caminhões com carga acima de 7 toneladas têm circulação restrita na Av. Brasil e em pontos do Centro (Decreto Municipal 78/2021). Para mudanças no Centro, escolhemos o veículo adequado e verificamos se é preciso pedir autorização à prefeitura.' },
+  { p: 'E se chover no dia da mudança?', r: 'Em Passo Fundo chove o ano todo. Os móveis vão protegidos com manta e plástico, e colchões e eletrônicos recebem cobertura extra. Se o tempo estiver muito ruim, dá para remarcar combinando antes.' },
+  { p: 'Atendem estudantes que vão morar perto da UPF?', r: 'Sim. Mudança de kitnet e de república costuma caber num carreto, que é a opção mais econômica. Nas semanas de início de semestre a procura sobe, então vale agendar cedo.' },
+  { p: 'Como peço um orçamento?', r: 'Pelo WhatsApp: mande o que vai levar (fotos ajudam), os endereços de saída e de chegada, o andar e se tem elevador, e a data que você precisa.' },
+];
+
+const schemaFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.p, acceptedAnswer: { '@type': 'Answer', text: f.r } })),
+};
+---
+<Base
+  title="Mudança e Frete em Passo Fundo e Região"
+  description="Mudanças, fretes e carretos em Passo Fundo e região: residencial, comercial, montagem de móveis e frete para Marau e Carazinho. Orçamento pelo WhatsApp."
+  schema={schemaFaq}
+  preloadImg="hero"
+>
+  <section class="hero">
+    <div class="wrap dividido" style="align-items:center">
+      <div>
+        <h1 style="font-size:clamp(2.4rem,5.6vw,4.4rem)">Mudanças e fretes em Passo Fundo.</h1>
+        <p class="lead">Da kitnet perto da UPF ao apartamento no Centro, da casa no Boqueirão até Marau ou Carazinho. Você recebe o valor antes, e os móveis viajam protegidos da chuva.</p>
+        <div class="acoes">
+          <a class="btn" href={linkWhatsapp()} target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+          <a class="link" href="/servicos/">Conhecer os serviços</a>
+        </div>
+      </div>
+      <Img nome="hero" alt="Dois carregadores colocando um sofá numa van de mudança" prioridade sizes="(max-width: 760px) 100vw, 50vw" />
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="cabeca">
+        <h2>O que a gente leva.</h2>
+        <p class="lead">Escolha pelo tamanho da mudança. Se ficar em dúvida, mande fotos dos itens que indicamos o serviço certo.</p>
+      </div>
+      <div class="cards">
+        {SERVICOS.map((s) => (
+          <a class="card" href={`/servicos/${s.slug}/`}>
+            <Img nome={s.imagem} alt={s.imagemAlt} sizes="(max-width: 760px) 100vw, 33vw" />
+            <h3>{s.nome}</h3>
+            <p>{s.resumo}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao-preta">
+    <div class="wrap">
+      <div class="cabeca">
+        <h2>Mudar em Passo Fundo tem detalhes.</h2>
+        <p class="lead">Três coisas que a gente considera em todo orçamento na cidade.</p>
+      </div>
+      <div class="compromissos tres">
+        <div>
+          <h3>Restrição no Centro</h3>
+          <p>Caminhões acima de 7 t têm circulação restrita na Av. Brasil e em pontos do Centro. Escolhemos o veículo certo e verificamos se é preciso pedir autorização.</p>
+        </div>
+        <div>
+          <h3>Chuva o ano inteiro</h3>
+          <p>A cidade tem chuva distribuída em todos os meses e geada no inverno. Manta, plástico e cobertura extra para colchões e eletrônicos fazem parte do serviço.</p>
+        </div>
+        <div>
+          <h3>Calendário das universidades</h3>
+          <p>No início dos semestres, a procura por carreto de kitnet perto da UPF, da UFFS e da Atitus aumenta. Quem agenda antes consegue o melhor horário.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="cabeca"><h2>Do orçamento à entrega.</h2></div>
+      <ol class="passos">
+        <li><h3>Mande os detalhes</h3><p>Itens, fotos, endereços, andar e data, tudo pelo WhatsApp.</p></li>
+        <li><h3>Receba o valor</h3><p>Preço combinado antes, já com veículo, ajudantes e acesso considerados.</p></li>
+        <li><h3>Marque o dia</h3><p>Data e horário confirmados, alinhados com o condomínio quando houver.</p></li>
+        <li><h3>Mudança feita</h3><p>Carga protegida, transporte e descarga em cada cômodo.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="secao secao-cinza">
+    <div class="wrap dividido">
+      <div>
+        <h2>Todos os bairros e as cidades vizinhas.</h2>
+        <p class="lead">Atendemos Passo Fundo inteira e as cidades da região, pela RS-324, BR-285 e BR-153.</p>
+        <ul class="bairros-lista" style="margin-top:28px">
+          {BAIRROS.map((b) => <li><a href={`/bairros/${b.slug}/`}>{b.nome}</a></li>)}
+        </ul>
+        <p style="margin-top:22px;color:var(--suave)">Cidades da região: {REGIAO.join(', ')}.</p>
+        <p class="acoes"><a class="btn btn-preto" href="/bairros/">Ver bairros atendidos</a></p>
+      </div>
+      <Img nome="cidade" alt="Estrada cortando lavouras vista de cima" />
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="texto">
+      <div class="cabeca"><h2>Dúvidas comuns</h2></div>
+      <Faq itens={faq} />
+    </div>
+  </section>
+
+  <Cta />
+</Base>

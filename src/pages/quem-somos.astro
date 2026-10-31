@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+import Img from '../components/Img.astro';
+---
+<Base
+  title="Quem Somos: mudanças e fretes em Passo Fundo"
+  description="Como trabalha a Mudanças e Fretes Passo Fundo: valor combinado antes, carga protegida da chuva, horário cumprido e atendimento direto pelo WhatsApp."
+  ogImage="sobre"
+>
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Quem somos</nav>
+      <h1>Frete combinado é frete cumprido.</h1>
+      <p class="lead" style="margin-top:18px">Somos um serviço de mudanças, fretes e carretos em Passo Fundo e nas cidades vizinhas. Trabalhamos para que você saiba exatamente o que vai acontecer no dia.</p>
+    </div>
+  </section>
+  <div class="post-capa"><Img nome="sobre" alt="Trabalhador sentado na porta de um caminhão de carga numa rua" prioridade /></div>
+
+  <section class="texto conteudo">
+    <p>Atendemos desde quem precisa levar uma geladeira de um bairro para outro até famílias mudando a casa inteira e empresas trocando de endereço. Também levamos mudanças para Marau, Carazinho, Coxilha e as outras cidades da região.</p>
+    <p>As queixas mais comuns de quem contrata frete são sempre as mesmas: o preço muda na hora, o caminhão atrasa e algum móvel chega danificado. Organizamos o nosso jeito de trabalhar para evitar exatamente isso.</p>
+
+    <h2>Nossa forma de trabalhar</h2>
+    <ul class="check">
+      <li><strong>Valor antes do serviço.</strong> O orçamento sai pelo WhatsApp, com veículo, distância, ajudantes e acesso já considerados.</li>
+      <li><strong>Carga protegida.</strong> Manta, cintas e plástico em todo transporte. Em Passo Fundo chove em todos os meses, então a proteção não é opcional.</li>
+      <li><strong>Horário respeitado.</strong> A data é confirmada antes, junto com as regras do condomínio quando houver.</li>
+      <li><strong>Conhecimento da cidade.</strong> A restrição de caminhões no Centro, os prédios altos e o movimento dos semestres nas universidades entram no planejamento.</li>
+      <li><strong>Contato direto.</strong> Você fala com quem organiza a sua mudança, do primeiro contato à última caixa.</li>
+    </ul>
+
+    <h2>Por que fazemos assim</h2>
+    <p>Mudança mexe com tudo o que a pessoa tem em casa. O mínimo que um frete pode oferecer é previsibilidade: chegar na hora, levar com cuidado e cobrar o que foi combinado. É isso que buscamos em cada atendimento.</p>
+    <p>Conheça os <a href="/servicos/">serviços</a> ou veja <a href="/equipe/">como a equipe se divide</a> no dia da mudança.</p>
+  </section>
+
+  <div style="height:64px"></div>
+  <Cta />
+</Base>

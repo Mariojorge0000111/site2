@@ -1,0 +1,68 @@
+{
+  "slug": "santa-marta",
+  "nome": "Santa Marta",
+  "prep": "no",
+  "titulo": "Frete e Mudança no Santa Marta – Passo Fundo",
+  "descricao": "Frete e mudança no Santa Marta, Passo Fundo: RS-153, Perimetral Sul e Av. Progresso, com vilas, travessas e loteamentos. Orçamento pelo WhatsApp.",
+  "h1": "Frete e mudança no Santa Marta, Passo Fundo",
+  "sobre": "O Santa Marta reúne, no mesmo setor do Plano Diretor, a Vila Nossa Senhora Aparecida, o Loteamento Jardim América, a Vila Donária, a Vila 20 de Setembro e o Loteamento Força e Luz. É um bairro de saída: a RS-153 e a Perimetral Dep. Guaracy Marinho passam por ele. Para frete no Santa Marta, isso encurta qualquer viagem para fora da cidade.",
+  "secoes": [
+    {
+      "h2": "Sete avenidas e uma rodovia",
+      "paragrafos": [
+        "O bairro tem sete avenidas: Luiza Izabel Ribeiro, Pedro Luizetto, Miguelzinho Lima, Progresso, Domingos Gomes, Afonso Bortolin Escobar e a Perimetral Sul. A RS-153 completa a lista, e é nela que fica o Portal Faculdades, no número 555, na Vila Nossa Senhora Aparecida.",
+        "Guias de hospedagem colocam o Santa Marta a cerca de 1,5 km dos hotéis do Boqueirão e a pouco mais de 3 km dos hotéis do Centro. Ou seja: perto do comércio, mas com acesso direto à rodovia."
+      ]
+    },
+    {
+      "h2": "Travessas e becos: o veículo certo para cada rua",
+      "paragrafos": [
+        "Dos cerca de 90 logradouros do bairro, 12 são travessas e um é beco. Rua estreita muda o plano. Em vez de caminhão grande, pode ser melhor um veículo médio que chegue até a porta, ou parar na avenida e levar os volumes no carrinho.",
+        "Muitas ruas têm nome de cidade gaúcha, como Ibirubá, Catuípe e Giruá, ou de pedra, como Ametista. A Rua Ametista existe também no Vera Cruz, e é por isso que o CEP faz diferença no pedido. Com uma foto da frente da casa e da rua, decidimos o veículo e o número de ajudantes antes do dia, e você não paga por um caminhão que não entra."
+      ]
+    },
+    {
+      "h2": "Uma mudança típica do bairro",
+      "paragrafos": [
+        "Um pedido de mudança no Santa Marta, publicado numa plataforma de serviços em 2021, listava duas camas, um rack, uma TV de 55 polegadas, um botijão de gás de 18 kg e uma cadeira giratória. É um bom exemplo de carga que cabe num veículo leve, mas pede cuidado: a TV vai em pé e protegida, e o botijão segue separado e preso.",
+        "Escolas também pesam no planejamento. O Portal Faculdades fica na RS-153, e a EMEI Abelinhas, na Rua Nicolau José Ribeiro, 171, atende creche e pré-escola. Perto da escola infantil, o horário de entrada e saída das crianças é o pior momento para parar o caminhão. Fora dele, a rua costuma ficar livre para carregar com calma, sem pressa e sem bloquear vizinhos."
+      ]
+    }
+  ],
+  "servicos": {
+    "frete": "Frete no Santa Marta tem saída rápida pela RS-153 e pela Perimetral Sul. É útil para quem leva móveis a outra cidade ou recebe carga de fora. Para chegar às vilas, as rotas são a Av. Progresso e a Av. Luiza Izabel Ribeiro. A carga vai coberta e amarrada.",
+    "carreto": "Carreto Santa Marta Passo Fundo serve para mudanças pequenas, como duas camas, rack e TV, que cabem num veículo leve. Também levamos eletrodomésticos e botijão, este sempre separado e preso. Mande fotos pelo WhatsApp e diga se a rua é travessa ou avenida, para escolhermos o veículo.",
+    "mudanca-residencial": "Na mudança residencial no Santa Marta, a rua define o plano. Em avenida, o caminhão encosta na frente. Em travessa estreita, usamos veículo menor ou levamos os volumes até a esquina. Desmontamos camas e roupeiros, embalamos com manta e montamos no destino, sob pedido. Com chuva, a carga vai coberta.",
+    "mudanca-comercial": "Para lojas e pequenas empresas nas avenidas Progresso e Luiza Izabel Ribeiro ou perto da RS-153, a mudança comercial é feita em horário combinado. Retiramos estoque, prateleiras e equipamentos, identificados por setor, e entregamos tudo pronto para montar no novo ponto, com a menor pausa possível no atendimento.",
+    "montagem-de-moveis": "Em casa com cômodos pequenos, roupeiro grande raramente sai inteiro. Na montagem de móveis no Santa Marta, desmontamos na saída, transportamos as peças com manta e montamos no novo endereço, sob pedido. Também montamos móveis novos comprados na caixa, como racks, camas e guarda-roupas de solteiro."
+  },
+  "faq": [
+    {
+      "p": "Minha casa fica numa travessa estreita. Vocês conseguem?",
+      "r": "Conseguimos, com planejamento. O Santa Marta tem doze travessas e um beco, e nem todas recebem caminhão. Com uma foto da rua, escolhemos um veículo menor ou paramos na avenida mais próxima e levamos os volumes no carrinho até a porta."
+    },
+    {
+      "p": "Vocês levam botijão de gás junto com a mudança?",
+      "r": "Avise na lista. O botijão vai separado dos móveis, em pé e bem preso, nunca deitado entre colchões. Se houver mais de um, conversamos antes para reservar o espaço certo no veículo."
+    },
+    {
+      "p": "Atendem a Vila Nossa Senhora Aparecida e o Jardim América?",
+      "r": "Atendemos. Pelo Plano Diretor, as duas fazem parte do setor do Santa Marta, junto com a Vila Donária, a Vila 20 de Setembro e o Loteamento Força e Luz. No pedido, informe a vila e o CEP para evitar confusão com ruas de mesmo nome."
+    }
+  ],
+  "proximos": [
+    "boqueirao",
+    "vera-cruz",
+    "centro"
+  ],
+  "fontes": [
+    "https://cepsbrasil.com.br/rs/passo-fundo/santa-marta",
+    "https://cepsbrasil.com.br/rs/passo-fundo/vera-cruz",
+    "https://www.pmpf.rs.gov.br/revisao-do-plano-diretor/wp-content/uploads/sites/56/2021/12/revisao_pddi_mapa_divisao_regional.pdf",
+    "https://www.doc.surf/wiki/passo-fundo",
+    "https://www.cronoshare.com.br/servicos/fretes/rio-grande-do-sul/passo-fundo",
+    "https://www.qualocep.com/cep/rs/passo-fundo/santa-marta/",
+    "https://au.hotels.com/nh11127969/hotels-in-santa-marta-passo-fundo-brazil",
+    "https://www.escol.as/253101-abelinhas"
+  ]
+}

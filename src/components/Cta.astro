@@ -1,0 +1,23 @@
+---
+import { linkWhatsapp } from '../config';
+
+interface Props {
+  titulo?: string;
+  texto?: string;
+  mensagem?: string;
+}
+const {
+  titulo = 'Vai mudar? Fale com a gente.',
+  texto = 'Mande o que precisa levar e os endereços. O valor chega pelo WhatsApp, antes de você fechar.',
+  mensagem,
+} = Astro.props;
+---
+<section class="secao cta-amarelo">
+  <div class="wrap cta-grade">
+    <div>
+      <h2>{titulo}</h2>
+      <p>{texto}</p>
+    </div>
+    <a class="btn btn-preto" href={linkWhatsapp(mensagem)} target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</section>

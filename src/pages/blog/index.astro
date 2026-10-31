@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const arquivos = import.meta.glob('./*.md', { eager: true }) as Record<string, any>;
+const posts = Object.values(arquivos)
+  .map((p) => ({ ...p.frontmatter, url: p.url.replace(/\/?$/, '/') }))
+  .sort((a, b) => (a.data < b.data ? 1 : -1));
+const [destaque, ...resto] = posts;
+---
+<Base
+  title="Blog: mudança e frete em Passo Fundo"
+  description="Quanto custa mudança em Passo Fundo, mudança de estudante, frete para Marau e região, caminhão no Centro e mudança com chuva. Guias práticos."
+>
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Blog</nav>
+      <h1>Blog</h1>
+      <p class="lead" style="margin-top:18px">Guias para planejar mudança e frete em Passo Fundo e região.</p>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:96px">
+    <a class="card dividido" href={destaque.url} style="margin-bottom:64px;display:grid">
+      <img src={destaque.imagem} alt={destaque.imagemAlt} width="1200" height="800" />
+      <div>
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem)">{destaque.titulo}</h2>
+        <p style="margin-top:14px;font-size:1.1rem">{destaque.descricao}</p>
+      </div>
+    </a>
+    <div class="cards">
+      {resto.map((p) => (
+        <a class="card" href={p.url}>
+          <img src={p.imagem} alt={p.imagemAlt} width="1200" height="800" loading="lazy" />
+          <h3>{p.titulo}</h3>
+          <p>{p.descricao}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

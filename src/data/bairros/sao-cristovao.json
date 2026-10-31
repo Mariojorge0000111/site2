@@ -1,0 +1,76 @@
+{
+  "slug": "sao-cristovao",
+  "nome": "São Cristóvão",
+  "prep": "no",
+  "titulo": "Frete e Mudança no São Cristóvão em Passo Fundo",
+  "descricao": "Mudança e frete no São Cristóvão, maior bairro de Passo Fundo, ao longo da Av. Presidente Vargas e das perimetrais. Peça seu orçamento pelo WhatsApp.",
+  "h1": "Frete e mudança no São Cristóvão, Passo Fundo",
+  "sobre": "O São Cristóvão é o maior bairro de Passo Fundo. Nasceu da chegada de italianos e ítalo-brasileiros ligados à agricultura e virou, com o tempo, polo industrial e comercial. Hoje reúne loteamentos como Ricci, Copacabana, Via Sul e Santo Antônio. Para uma mudança no São Cristóvão, a primeira pergunta é simples: em que ponta da Presidente Vargas fica o endereço?",
+  "secoes": [
+    {
+      "h2": "A Presidente Vargas de ponta a ponta",
+      "paragrafos": [
+        "A Av. Presidente Vargas, apontada como a segunda maior da cidade, atravessa o bairro inteiro, com canteiros arborizados no meio. É por ela que chega a maior parte dos fretes. Ao longo dela ficam o Passo Fundo Shopping, no número 1.610, e o Estádio Vermelhão da Serra, no 3.495.",
+        "A avenida também está em obra. A segunda etapa, do Instituto até a Rua General Canabarro, tem entrega prevista para o segundo semestre de 2027 e vai ligar melhor o bairro ao Centro. Até lá, o roteiro do caminhão é conferido na semana da mudança."
+      ]
+    },
+    {
+      "h2": "Shopping, estádio e IFSul no mapa da mudança",
+      "paragrafos": [
+        "Três referências ajudam a planejar dia, horário e ponto de parada:"
+      ],
+      "lista": [
+        "Passo Fundo Shopping: cerca de 200 lojas e 2.000 vagas de estacionamento. Em mudança de lojista, a entrada de carga é combinada com a administração.",
+        "Vermelhão da Serra, estádio do Esporte Clube Passo Fundo: evite marcar a mudança perto dele em dia de jogo.",
+        "IFSul, campus Passo Fundo, na Estrada Perimetral Leste, 150: boa referência para endereços do lado da perimetral."
+      ]
+    },
+    {
+      "h2": "Bairro grande, endereços muito diferentes",
+      "paragrafos": [
+        "São mais de 150 logradouros, entre ruas, travessas e avenidas como Frei Junípero Serra, Clemente Tarasconi, Nino Machado e Álvaro Berthier. As perimetrais Dep. Guaracy Marinho e Cel. Jarbas Quadros da Silva cortam o bairro. Por isso pedimos o endereço completo, com número e loteamento, e não só o nome do bairro.",
+        "Um pedido que aparece por aqui é juntar itens de duas casas do mesmo bairro e levar tudo para um apartamento. Isso cabe numa viagem só, com duas paradas, se for combinado antes.",
+        "O setor do Plano Diretor vai além do núcleo antigo: inclui o Bairro Ricci, o Jardim André Rebechi, o Copacabana e os loteamentos César Santos, São Cristóvão II, Via Sul e Santo Antônio. Alguns desses nomes aparecem entre parênteses no próprio cadastro de CEP, junto do nome da rua. A prefeitura também planeja um espaço Multigare de esporte e lazer no bairro. Quando a obra começar, o entorno vai ganhar movimento de máquinas, e conferimos o acesso antes da data."
+      ]
+    }
+  ],
+  "servicos": {
+    "frete": "Frete no São Cristóvão costuma seguir pela Presidente Vargas ou pelas perimetrais, que ligam o bairro ao resto da cidade sem entrar no Centro. Transportamos móveis comprados nas lojas da avenida, eletrodomésticos e cargas de pequenas indústrias, sempre com manta e amarração. Informe o loteamento para acertar a rota.",
+    "carreto": "Carreto São Cristóvão Passo Fundo é a opção para poucos itens. No mesmo carreto dá para retirar coisas em dois endereços do bairro e entregar num terceiro, desde que a lista caiba no veículo. Mande fotos de cada ponto pelo WhatsApp e informe se há escada ou elevador.",
+    "mudanca-residencial": "Na mudança residencial no São Cristóvão, o roteiro depende do loteamento. Casas, sobrados e prédios dividem o mesmo bairro. Medimos o acesso, confirmamos onde o caminhão pode parar e desmontamos camas e roupeiros. Se a obra da Presidente Vargas afetar o trecho, ajustamos o horário.",
+    "mudanca-comercial": "O bairro tem comércio, bancos, escolas e supermercados próprios. Para mudança comercial no São Cristóvão, levamos mercadoria, prateleiras e equipamentos de escritório com etiqueta por setor. Em loja do Passo Fundo Shopping, combinamos o horário e a doca de carga com a administração antes do dia.",
+    "montagem-de-moveis": "Montagem de móveis no São Cristóvão é pedida tanto em mudança quanto em compra nova. Móvel que sai da loja na caixa pode ser montado no dia da entrega, sob pedido. Na mudança, desmontamos roupeiros e camas box, guardamos as ferragens em saco identificado e montamos no destino."
+  },
+  "faq": [
+    {
+      "p": "A obra da Av. Presidente Vargas atrapalha a mudança?",
+      "r": "Pode mudar o caminho. A segunda etapa da obra vai do Instituto até a Rua General Canabarro, com entrega prevista para o segundo semestre de 2027. Na semana da mudança, conferimos os desvios e escolhemos a rota mais curta até o seu endereço."
+    },
+    {
+      "p": "Moro perto do Vermelhão da Serra. Tem dia ruim para mudar?",
+      "r": "Dia de jogo do Esporte Clube Passo Fundo é o mais delicado, porque o estádio fica na própria Presidente Vargas. Ao marcar a data, olhamos a tabela do clube e sugerimos outro horário se houver partida."
+    },
+    {
+      "p": "Dá para buscar móveis em duas casas e levar para um apartamento?",
+      "r": "Dá. Fazemos as duas coletas no mesmo dia, em sequência, e subimos tudo no apartamento. Informe os três endereços, se o prédio tem elevador e mande fotos dos itens de cada casa para definirmos o veículo."
+    }
+  ],
+  "proximos": [
+    "lucas-araujo",
+    "vila-rodrigues",
+    "centro"
+  ],
+  "fontes": [
+    "https://verdiimoveis.com.br/blog/dicas-do-bairro/quais-os-melhores-bairros-de-passo-fundo-para-morar/",
+    "https://bortoliniimoveis.com.br/blog/para-que-lado-passo-fundo-cresce",
+    "https://cepsbrasil.com.br/rs/passo-fundo/sao-cristovao",
+    "https://www.pmpf.rs.gov.br/revisao-do-plano-diretor/wp-content/uploads/sites/56/2021/12/revisao_pddi_mapa_divisao_regional.pdf",
+    "https://www.jornaldocomercio.com/jornal-cidades/2026/09/1263043-passo-fundo-se-transforma-em-canteiro-de-obras-publicas-e-privadas.html",
+    "https://www.jornaldocomercio.com/jornal-cidades/2026/10/1267732-avancam-as-obras-para-a-criacao-de-espaco-de-lazer-e-esporte-em-bairros-de-passo-fundo.html",
+    "https://www.cronoshare.com.br/servicos/fretes/rio-grande-do-sul/passo-fundo",
+    "https://www.jornaldocomercio.com/_conteudo/2018/04/economia/622657-passo-fundo-shopping-abre-as-portas-para-o-publico-no-dia-18-de-outubro.html",
+    "https://www.buser.com.br/destinos/pontos-turisticos/rs/passo-fundo/estadio-vermelhao-da-serra",
+    "https://en.wikipedia.org/wiki/Esporte_Clube_Passo_Fundo",
+    "https://www.escol.as/254957-ifsul-campus-passo-fundo"
+  ]
+}

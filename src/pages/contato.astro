@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import Img from '../components/Img.astro';
+import { SITE, linkWhatsapp } from '../config';
+---
+<Base
+  title="Orçamento de Mudança e Frete em Passo Fundo"
+  description="Peça orçamento de mudança, frete ou carreto em Passo Fundo pelo WhatsApp. Informe saída, destino e itens e receba o valor antes de fechar."
+  ogImage="contato"
+>
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Contato</nav>
+      <h1>Orçamento pelo WhatsApp.</h1>
+      <p class="lead" style="margin-top:18px">Preencha os campos e a mensagem abre pronta no WhatsApp. Com mais detalhes, o valor sai mais certo.</p>
+    </div>
+  </section>
+
+  <section class="wrap dividido" style="padding-bottom:96px;align-items:start">
+    <form class="form caixa" id="orcamento">
+      <label>Como podemos te chamar?<input name="nome" autocomplete="name" required /></label>
+      <label>Tipo de serviço
+        <select name="servico">
+          <option>Mudança de casa ou apartamento</option><option>Mudança de empresa</option><option>Frete de móveis</option>
+          <option>Carreto (poucos itens)</option><option>Montar e desmontar móveis</option>
+          <option>Içamento pela janela</option><option>Embalar louças e frágeis</option>
+        </select>
+      </label>
+      <div class="duas">
+        <label>Saída (bairro ou cidade)<input name="origem" required /></label>
+        <label>Destino (bairro ou cidade)<input name="destino" required /></label>
+      </div>
+      <div class="duas">
+        <label>Para quando?<input name="data" type="date" /></label>
+        <label>Como é o acesso?
+          <select name="acesso">
+            <option>Casa ou térreo</option><option>Apartamento com elevador</option><option>Apartamento só com escada</option><option>Ainda não sei</option>
+          </select>
+        </label>
+      </div>
+      <label>Lista dos itens<textarea name="itens" rows="4" placeholder="Ex.: roupeiro de 6 portas, geladeira, sofá e 20 caixas"></textarea></label>
+      <button class="btn btn-preto" type="submit">Montar mensagem no WhatsApp</button>
+      <p style="font-size:.9rem;color:var(--suave);margin:0">A conversa abre com o texto montado. Você revisa e só envia se quiser.</p>
+    </form>
+    <div>
+      <Img nome="contato" alt="Casal sorrindo segurando as chaves da casa nova" />
+      <div style="margin-top:32px">
+        <h2 style="font-size:1.8rem">Quer mandar fotos?</h2>
+        <p style="margin-top:12px;color:var(--suave)">Fotos do roupeiro, da escada e da rua ajudam a acertar o veículo. Atendimento: {SITE.horario}.</p>
+        <p class="acoes"><a class="btn" href={linkWhatsapp()} target="_blank" rel="noopener">Conversar agora</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script define:vars={{ numero: SITE.whatsapp }}>
+    document.getElementById('orcamento').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const d = new FormData(e.target);
+      const data = d.get('data') ? new Date(d.get('data') + 'T12:00').toLocaleDateString('pt-BR') : 'a combinar';
+      const msg = [
+        `Oi! Encontrei o site e quero um orçamento.`,
+        `Sou: ${d.get('nome')}`,
+        `Preciso de: ${d.get('servico')}`,
+        `Saindo de: ${d.get('origem')}`,
+        `Indo para: ${d.get('destino')}`,
+        `Quando: ${data}`,
+        `Acesso: ${d.get('acesso')}`,
+        `O que vai: ${d.get('itens') || 'mando fotos em seguida'}`,
+      ].join('\n');
+      window.open(`https://wa.me/${numero}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    });
+  </script>
+</Base>

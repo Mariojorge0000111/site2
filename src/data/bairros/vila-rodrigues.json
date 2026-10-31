@@ -1,0 +1,73 @@
+{
+  "slug": "vila-rodrigues",
+  "nome": "Vila Rodrigues",
+  "prep": "na",
+  "titulo": "Frete e Mudança na Vila Rodrigues, Passo Fundo",
+  "descricao": "Frete e mudança na Vila Rodrigues, Passo Fundo, entre a Av. Presidente Vargas e a Av. Sete de Setembro, perto da Atitus. Peça orçamento no WhatsApp.",
+  "h1": "Frete e mudança na Vila Rodrigues, Passo Fundo",
+  "sobre": "A Vila Rodrigues é um bairro compacto: são menos de 30 logradouros, entre o lado par da Av. Presidente Vargas e a Av. Sete de Setembro. No Plano Diretor, divide o setor com a Vila Popular. Tem escola, faculdade e hospital a poucas quadras uns dos outros. Isso faz da mudança na Vila Rodrigues um trabalho de rua movimentada e espaço curto.",
+  "secoes": [
+    {
+      "h2": "Duas avenidas e ruas curtas",
+      "paragrafos": [
+        "A Presidente Vargas marca um limite claro: pela base de CEPs, o lado par pertence à Vila Rodrigues e o lado ímpar, ao Lucas Araújo. Do outro lado, a Av. Sete de Setembro completa o desenho. No meio ficam ruas como General Prestes Guimarães, José Bonifácio, Bezerra de Menezes, Frei Caneca, Plácido de Castro e Quatorze de Julho.",
+        "Com poucas ruas e muito movimento, o ponto de parada é decidido antes do dia. Se o endereço for na Presidente Vargas, procuramos encostar na transversal mais próxima, e não na pista principal."
+      ]
+    },
+    {
+      "h2": "Atitus, Notre Dame e Hospital César Santos",
+      "paragrafos": [
+        "A Atitus Educação, antiga IMED, tem sede na Rua Senador Pinheiro, 304, rua que aparece na lista de logradouros da Vila Rodrigues. Na Presidente Vargas funciona também um polo da Estácio. A Escola Notre Dame Menino Jesus fica na Rua General Prestes Guimarães, 520, com creche, pré-escola e ensino fundamental.",
+        "Na Rua Alcides Moura, 82, já na Vila Popular, está o Hospital Beneficente Dr. César Santos. Em mudança perto do hospital, a regra é não bloquear a entrada de ambulâncias.",
+        "Os anúncios do bairro mostram de tudo: studio de 39 m² na Presidente Vargas, apartamento de dois quartos e 55 m² na Rua Plácido de Castro e casas de três quartos na José Bonifácio. Ou seja, o serviço vai do carreto de um studio à mudança de uma casa inteira."
+      ]
+    },
+    {
+      "h2": "Horário de aula conta na Vila Rodrigues",
+      "paragrafos": [
+        "Além da Atitus e da Notre Dame, guias escolares situam na Vila Rodrigues o Colégio Tiradentes da Brigada Militar e a escola de educação profissional do SENAC. São muitos alunos para poucas ruas.",
+        "Na prática, a entrada da manhã, o meio-dia e o fim da tarde são os momentos de rua cheia, carro em fila dupla e calçada ocupada. Uma mudança na Vila Rodrigues rende mais no meio da manhã ou no começo da tarde. Em período de férias escolares, o movimento cai e fica mais fácil achar lugar para o caminhão."
+      ]
+    }
+  ],
+  "servicos": {
+    "frete": "O frete na Vila Rodrigues costuma ser curto quando o destino é o Centro ou o Lucas Araújo, vizinhos imediatos. Levamos móveis, eletrodomésticos e caixas com manta e planejamos a parada fora da faixa de maior fluxo da Presidente Vargas. No pedido, informe o lado da avenida e o número.",
+    "carreto": "Carreto Vila Rodrigues Passo Fundo combina com studio e apartamento pequeno, que aparecem bastante nos anúncios da Presidente Vargas. Uma cama, uma geladeira, uma escrivaninha e algumas caixas cabem num veículo leve. Mande a lista e fotos pelo WhatsApp e receba o valor antes de marcar.",
+    "mudanca-residencial": "Na mudança residencial na Vila Rodrigues, há casas de três quartos em ruas como a José Bonifácio e prédios de dois quartos em ruas como a Plácido de Castro. Para cada caso, medimos o acesso, desmontamos camas e roupeiros e protegemos os móveis com manta antes de carregar.",
+    "mudanca-comercial": "Para clínicas, consultórios e escritórios da Vila Rodrigues, a mudança comercial é feita em horário combinado, de preferência fora do expediente, sob consulta. Equipamentos sensíveis vão embalados à parte, arquivos seguem em caixas numeradas e os móveis são identificados pela sala de destino, para nada ficar no lugar errado.",
+    "montagem-de-moveis": "Studio e apartamento compacto pedem móveis que se desmontam bem. Na montagem de móveis na Vila Rodrigues, desmontamos roupeiros, camas e mesas na saída, levamos as peças protegidas e montamos no novo endereço, sob pedido. Também montamos móvel novo comprado na caixa, do quarto ao escritório."
+  },
+  "faq": [
+    {
+      "p": "Meu prédio fica no lado par da Presidente Vargas. Isso é Vila Rodrigues?",
+      "r": "Pela base de CEPs, sim: o lado par da Av. Presidente Vargas está na Vila Rodrigues, e o lado ímpar no Lucas Araújo. Para o orçamento, o que importa mesmo é o número e se há elevador, mas a informação ajuda a planejar a parada."
+    },
+    {
+      "p": "Fazem mudança de estudante da Atitus?",
+      "r": "Fazemos. A Atitus fica na Rua Senador Pinheiro, junto do bairro. Mudança de estudante geralmente cabe num carreto: cama, colchão, escrivaninha e caixas. Diga os dois endereços e o andar, e mande fotos para o valor sair certo."
+    },
+    {
+      "p": "Vocês atendem a Vila Popular?",
+      "r": "Atendemos. A Vila Popular está no mesmo setor da Vila Rodrigues no Plano Diretor e abriga o Hospital Beneficente Dr. César Santos, na Rua Alcides Moura. Em endereços próximos ao hospital, combinamos uma parada que não bloqueie a entrada."
+    }
+  ],
+  "proximos": [
+    "lucas-araujo",
+    "centro",
+    "sao-cristovao"
+  ],
+  "fontes": [
+    "https://cepsbrasil.com.br/rs/passo-fundo/vila-rodrigues",
+    "https://cepsbrasil.com.br/rs/passo-fundo/lucas-araujo",
+    "https://www.pmpf.rs.gov.br/revisao-do-plano-diretor/wp-content/uploads/sites/56/2021/12/revisao_pddi_mapa_divisao_regional.pdf",
+    "https://bortoliniimoveis.com.br/blog/conveniencia-e-grande-oferta-de-imoveis-conheca-o-centro-de-passo-fundo",
+    "https://www.doc.surf/wiki/passo-fundo",
+    "https://www.escol.as/304422-notre-dame-menino-jesus",
+    "https://www.guiadacarreira.com.br/faculdades/estacio/campus/estacio-vila-rodrigues-passo-fundo",
+    "https://cnpj-api.com/en/cnpj/04858393000120",
+    "https://loft.com.br/imovel/apartamento-avenida-presidente-vargas-vila-rodrigues-passo-fundo-studio-39m2/a2yxudyp",
+    "https://loft.com.br/imovel/apartamento-rua-placido-de-castro-vila-rodrigues-passo-fundo-2-quartos-55m2/s5ynlwrl",
+    "https://loft.com.br/imovel/casa-rua-jose-bonifacio-vila-rodrigues-passo-fundo-3-quartos-234m2/ajuk4cvk",
+    "https://www.melhorescola.com.br/busca/rio-grande-do-sul/passo-fundo/vila-rodrigues"
+  ]
+}

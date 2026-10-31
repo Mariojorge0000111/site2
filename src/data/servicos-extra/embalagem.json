@@ -1,0 +1,96 @@
+{
+  "secoes": [
+    {
+      "h2": "Material certo para cada item",
+      "paragrafos": [
+        "Cada tipo de objeto pede um material. Usar só plástico-bolha para tudo encarece e protege mal o que é pesado. A tabela resume o que usamos.",
+        "Uma caixa bem embalada não faz barulho quando é chacoalhada de leve. Se faz, falta papel. Esse teste simples vale para quem embala sozinho também."
+      ],
+      "tabela": {
+        "cabecalho": [
+          "Item",
+          "Material",
+          "Detalhe"
+        ],
+        "linhas": [
+          [
+            "Pratos e travessas",
+            "Papel e caixa pequena",
+            "Em pé, um encostado no outro"
+          ],
+          [
+            "Copos e taças",
+            "Papel e plástico-bolha",
+            "Enrolados um por um"
+          ],
+          [
+            "TV sem caixa",
+            "Plástico-bolha e papelão nas bordas",
+            "Vai em pé, nunca deitada"
+          ],
+          [
+            "Quadros e espelhos",
+            "Papelão nos cantos e plástico-bolha",
+            "Marcados como frágeis"
+          ],
+          [
+            "Colchão e sofá",
+            "Filme plástico",
+            "Protege da umidade e da sujeira"
+          ],
+          [
+            "Livros e documentos",
+            "Caixa pequena e fita",
+            "Caixa leve o bastante para carregar"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Umidade, chuva e frio em Passo Fundo",
+      "paragrafos": [
+        "Passo Fundo tem chuva distribuída em todos os meses e inverno com geada. Numa mudança, a água entra pelo caminho entre a porta e o caminhão, mesmo que o caminhão seja fechado.",
+        "Por isso colchões, sofás e estofados vão envolvidos em filme plástico. Caixas de papelão ficam longe do chão molhado e são fechadas com fita em cima e embaixo. Eletrônicos vão embalados e nunca encostam em superfície fria e úmida.",
+        "Para mais cuidados na época fria, leia [mudança no inverno e na chuva](/blog/mudanca-no-inverno-e-na-chuva-em-passo-fundo/).",
+        "Outro cuidado vale para geladeira e freezer. Eles precisam ser desligados e secos antes de embalar. Se viajarem com água acumulada, a umidade passa para as caixas em volta e pode manchar estofados e roupas.",
+        "Roupas de inverno, cobertores e edredons ocupam muito volume. Sacos grandes resolvem melhor do que caixas e deixam espaço no caminhão para o que é rígido."
+      ]
+    },
+    {
+      "h2": "Embalagem completa ou só dos frágeis",
+      "paragrafos": [
+        "Há duas formas de contratar. Na completa, a equipe embala a casa inteira. Na parcial, você embala roupas, livros e utensílios simples, e a equipe cuida de louças, vidros, quadros e eletrônicos.",
+        "A parcial é comum em mudanças de estudante, com pouca coisa frágil, e em apartamentos pequenos. A completa costuma valer a pena em casas com cozinha cheia. As duas podem ir junto da [mudança residencial](/servicos/mudanca-residencial/) ou da [mudança comercial](/servicos/mudanca-comercial/).",
+        "Se você ainda não sabe qual opção escolher, comece pela cozinha. Ela concentra a maior parte dos frágeis e mostra bem quanto trabalho a embalagem vai dar. Com isso, fica mais fácil pedir o orçamento pelo [contato](/contato/).",
+        "Na embalagem parcial, combine antes quais cômodos ficam com você e quais ficam com a equipe. Separe os frágeis num canto da casa, longe das caixas que você já fechou. Isso evita que a equipe abra caixa pronta ou deixe algum vidro para trás."
+      ]
+    },
+    {
+      "h2": "Como identificar as caixas",
+      "paragrafos": [
+        "Uma lista simples no celular, com o número de cada caixa e o que tem dentro, ajuda a achar a cafeteira no primeiro dia sem abrir tudo.",
+        "Caixa sem nome vira caixa perdida no apartamento novo. Além da lista, pedimos que cada caixa tenha:"
+      ],
+      "lista": [
+        "Cômodo de destino escrito em dois lados",
+        "Uma palavra sobre o conteúdo: louça, banheiro, documentos",
+        "Seta indicando o lado de cima",
+        "FRÁGIL quando houver vidro ou eletrônico"
+      ]
+    }
+  ],
+  "faqExtra": [
+    {
+      "p": "Vocês reaproveitam caixas que eu já tenho?",
+      "r": "Sim, se estiverem firmes e secas. Caixas de mercado amassadas ou úmidas rasgam com peso e não devem levar frágeis."
+    },
+    {
+      "p": "A embalagem protege contra quebra em qualquer caso?",
+      "r": "Ela reduz muito o risco, mas nenhum material elimina todo risco. Por isso usamos o material adequado para cada objeto e carregamos as caixas frágeis por cima e bem presas."
+    },
+    {
+      "p": "Posso comprar só o material de embalagem?",
+      "r": "Pode. Diga quantos cômodos tem a casa e o que é frágil, e indicamos a quantidade aproximada de caixas e de plástico-bolha."
+    }
+  ]
+}
