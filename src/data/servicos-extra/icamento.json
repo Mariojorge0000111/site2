@@ -1,0 +1,83 @@
+{
+  "secoes": [
+    {
+      "h2": "Escada, desmontagem ou içamento",
+      "paragrafos": [
+        "Na maioria dos casos, a resposta aparece já nas primeiras perguntas. O içamento fica para quando não há outro jeito seguro.",
+        "Antes de pensar em corda, vemos se há um jeito mais simples. A ordem que seguimos é esta:"
+      ],
+      "lista": [
+        "O móvel cabe no elevador de pé ou inclinado?",
+        "Desmontado, ele passa pela porta e pelo elevador?",
+        "Dá para levar pela escada sem bater em paredes e corrimão?",
+        "Se nada disso funcionar, a janela ou a sacada permitem içar com segurança?"
+      ]
+    },
+    {
+      "h2": "Prédios altos e sobrados em Passo Fundo",
+      "paragrafos": [
+        "A cidade tem dezenas de prédios em construção e já conta com residenciais de muitos andares. Em prédio novo, o elevador de serviço costuma ser o caminho. O problema aparece com sofás grandes, cama box inteira e geladeira duplex.",
+        "Nos prédios mais antigos do Centro, sem elevador, a escada é estreita e tem patamar curto. Nos sobrados, a escada interna pode ser em L ou em caracol. Cada caso pede uma técnica, e por isso a avaliação vem antes do dia.",
+        "Um sinal de alerta é o sofá que entrou no apartamento antes de a obra terminar. Muitos móveis sobem por fora durante a construção e depois não descem pelo elevador. Nesses casos, a avaliação feita antes evita surpresa no dia.",
+        "Antes de comprar um sofá novo para um apartamento alto, vale medir o elevador e a porta. A conta leva cinco minutos e pode evitar a necessidade de içar."
+      ]
+    },
+    {
+      "h2": "Quando o clima atrapalha",
+      "paragrafos": [
+        "O içamento depende de tempo seco e vento fraco. Corda molhada escorrega e o móvel balança. Em Passo Fundo, com chuva distribuída pelo ano todo e geada no inverno, é comum ter de remarcar.",
+        "Por isso combinamos uma data alternativa já no orçamento. Se a [mudança residencial](/servicos/mudanca-residencial/) estiver marcada para o mesmo dia, o resto da mudança segue e só o içamento é adiado, quando possível. Veja mais sobre [mudança no inverno e na chuva](/blog/mudanca-no-inverno-e-na-chuva-em-passo-fundo/).",
+        "Em dia de vento forte, mesmo sem chuva, o içamento também pode ser adiado. A decisão é tomada no local, olhando as condições do momento."
+      ]
+    },
+    {
+      "h2": "O que pedimos para avaliar",
+      "paragrafos": [
+        "Mande pelo [contato](/contato/) as informações abaixo. Com elas dizemos se o içamento é viável ou se outra solução é melhor.",
+        "Com as fotos, respondemos se o içamento é viável, quantas pessoas vão e quanto tempo deve levar. Se a resposta for não, dizemos o porquê e qual alternativa faz sentido: desmontar, levar pela escada ou deixar o móvel e comprar outro."
+      ],
+      "tabela": {
+        "cabecalho": [
+          "Informação",
+          "Para que serve"
+        ],
+        "linhas": [
+          [
+            "Medidas do móvel",
+            "Saber se passa pela abertura"
+          ],
+          [
+            "Foto da janela ou sacada, por dentro e por fora",
+            "Ver grade, vidro fixo e espaço de manobra"
+          ],
+          [
+            "Foto do chão embaixo",
+            "Checar fios, árvores, toldos e carros"
+          ],
+          [
+            "Andar do apartamento",
+            "Planejar corda e número de pessoas"
+          ],
+          [
+            "Regra do condomínio",
+            "Confirmar horário e área isolada"
+          ]
+        ]
+      }
+    }
+  ],
+  "faqExtra": [
+    {
+      "p": "É preciso tirar o vidro da janela?",
+      "r": "Às vezes, sim. Janelas com vidro fixo ou grade só deixam passar o móvel se forem abertas ou removidas. Isso deve ser feito por quem instalou a esquadria ou com autorização do proprietário."
+    },
+    {
+      "p": "Até qual andar dá para içar?",
+      "r": "Não há um número fixo. Depende do peso do móvel, da altura e do espaço livre embaixo. Andares muito altos podem exigir outra solução. A avaliação por foto responde isso."
+    },
+    {
+      "p": "O içamento pode ser contratado sem a mudança?",
+      "r": "Pode. É comum para quem comprou um sofá novo que não entra no elevador. Avise o modelo, as medidas e o endereço."
+    }
+  ]
+}

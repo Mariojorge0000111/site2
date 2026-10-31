@@ -4,15 +4,36 @@
       "h2": "Qual veículo vai no seu frete",
       "paragrafos": [
         "O veículo certo é o que leva tudo numa viagem só, sem sobrar espaço demais. Veículo grande demais encarece. Pequeno demais obriga a voltar. Por isso pedimos a lista e as fotos antes de passar o valor.",
-        "A tabela abaixo é um guia. Ela não é regra fixa: um único roupeiro grande pode mudar a escolha."
+        "A tabela abaixo é um guia. Ela não é regra fixa: um único roupeiro grande pode mudar a escolha.",
+        "Em Passo Fundo, a dúvida mais comum é entre o utilitário e o caminhão pequeno. A regra prática: se a carga tem cama de casal, roupeiro ou mais de dez caixas, o caminhão pequeno costuma ser a escolha. Se são poucos itens soltos, o utilitário basta e custa menos."
       ],
       "tabela": {
-        "cabecalho": ["Carga", "Veículo indicado", "Observação"],
+        "cabecalho": [
+          "Carga",
+          "Veículo indicado",
+          "Observação"
+        ],
         "linhas": [
-          ["Até 5 itens médios", "Utilitário", "Circula bem no Centro"],
-          ["Um quarto ou uma kitnet", "Caminhão pequeno", "Costuma resolver em uma viagem"],
-          ["Estoque ou carga com muitos volumes", "Caminhão baú", "Carga fechada contra chuva"],
-          ["Mudança de casa inteira", "Caminhão maior", "Veja a página de mudança residencial"]
+          [
+            "Até 5 itens médios",
+            "Utilitário",
+            "Circula bem no Centro"
+          ],
+          [
+            "Um quarto ou uma kitnet",
+            "Caminhão pequeno",
+            "Costuma resolver em uma viagem"
+          ],
+          [
+            "Estoque ou carga com muitos volumes",
+            "Caminhão baú",
+            "Carga fechada contra chuva"
+          ],
+          [
+            "Mudança de casa inteira",
+            "Caminhão maior",
+            "Veja a página de mudança residencial"
+          ]
         ]
       }
     },
@@ -34,7 +55,9 @@
     {
       "h2": "O que você precisa mandar para receber o valor",
       "paragrafos": [
-        "Quanto mais claro o pedido, mais rápido sai o orçamento. Mande pelo WhatsApp ou pela página de [contato](/contato/):"
+        "Com as informações listadas abaixo, respondemos com o veículo indicado, o número de ajudantes e o valor. Se algo mudar depois, como um móvel a mais na lista, avise antes do dia. Assim o veículo não chega pequeno e ninguém perde tempo.",
+        "Ainda está em dúvida sobre qual serviço pedir? A lista completa está em [serviços](/servicos/).",
+        "Se a lista crescer até virar uma casa inteira, a gente avisa e sugere a mudança completa, com o valor das duas opções lado a lado."
       ],
       "lista": [
         "Endereço de retirada e de entrega, com bairro",
@@ -46,8 +69,17 @@
     }
   ],
   "faqExtra": [
-    { "p": "Posso acompanhar a carga no veículo?", "r": "Depende do veículo e do número de lugares na cabine. Pergunte no orçamento. Na maioria dos casos, o cliente vai no próprio carro e encontra a equipe no destino." },
-    { "p": "Fazem frete com retirada em dois endereços?", "r": "Sim, se os dois pontos estiverem no caminho. Avise os dois endereços no pedido para o valor já considerar a parada extra." },
-    { "p": "Qual a menor carga que vocês levam?", "r": "Para um ou dois itens, o serviço indicado é o [carreto](/servicos/carreto/), com veículo menor e preço mais baixo." }
+    {
+      "p": "Posso acompanhar a carga no veículo?",
+      "r": "Depende do veículo e do número de lugares na cabine. Pergunte no orçamento. Na maioria dos casos, o cliente vai no próprio carro e encontra a equipe no destino."
+    },
+    {
+      "p": "Fazem frete com retirada em dois endereços?",
+      "r": "Sim, se os dois pontos estiverem no caminho. Avise os dois endereços no pedido para o valor já considerar a parada extra."
+    },
+    {
+      "p": "Qual a menor carga que vocês levam?",
+      "r": "Para um ou dois itens, o serviço indicado é o [carreto](/servicos/carreto/), com veículo menor e preço mais baixo."
+    }
   ]
 }

@@ -5,23 +5,53 @@
       "paragrafos": [
         "Móvel grande montado ocupa espaço no caminhão e força as juntas na viagem. Um roupeiro carregado inteiro pode empenar, soltar o fundo ou rachar a lateral na curva da escada.",
         "Desmontado, ele vai deitado, protegido e sem peso sobre as dobradiças. No destino, a montagem volta o móvel ao prumo, com portas alinhadas.",
-        "Em apartamentos novos de Passo Fundo, com corredores e elevadores estreitos, a desmontagem muitas vezes é a única forma de o móvel entrar."
+        "Em apartamentos novos de Passo Fundo, com corredores e elevadores estreitos, a desmontagem muitas vezes é a única forma de o móvel entrar.",
+        "Mesmo dentro de Passo Fundo, a viagem tem lombada, rua de paralelepípedo e curva. Um móvel solto lá dentro sofre mais do que parece."
       ]
     },
     {
       "h2": "Quais móveis costumam ser desmontados",
       "paragrafos": [
-        "A tabela mostra o que é comum em cada tipo de móvel. A decisão final é feita olhando a peça, por foto ou no local."
+        "A tabela mostra o que é comum em cada tipo de móvel. A decisão final é feita olhando a peça, por foto ou no local.",
+        "Se você não tem certeza, mande fotos. Às vezes um móvel parece grande, mas vai inteiro. Outras vezes uma cômoda simples precisa sair sem gavetas para não abrir no transporte."
       ],
       "tabela": {
-        "cabecalho": ["Móvel", "Desmontar?", "Por quê"],
+        "cabecalho": [
+          "Móvel",
+          "Desmontar?",
+          "Por quê"
+        ],
         "linhas": [
-          ["Roupeiro de 4 a 6 portas", "Sim", "Não passa por portas e escadas inteiro"],
-          ["Cama de casal com cabeceira", "Sim", "Ocupa menos espaço e não risca"],
-          ["Beliche", "Sim", "Muito alto para elevador"],
-          ["Rack e painel de TV", "Em geral sim", "Painel pendurado precisa sair da parede"],
-          ["Cômoda pequena", "Em geral não", "Vai inteira, com gavetas presas"],
-          ["Mesa de jantar", "Depende", "Tampo de vidro sai sempre"]
+          [
+            "Roupeiro de 4 a 6 portas",
+            "Sim",
+            "Não passa por portas e escadas inteiro"
+          ],
+          [
+            "Cama de casal com cabeceira",
+            "Sim",
+            "Ocupa menos espaço e não risca"
+          ],
+          [
+            "Beliche",
+            "Sim",
+            "Muito alto para elevador"
+          ],
+          [
+            "Rack e painel de TV",
+            "Em geral sim",
+            "Painel pendurado precisa sair da parede"
+          ],
+          [
+            "Cômoda pequena",
+            "Em geral não",
+            "Vai inteira, com gavetas presas"
+          ],
+          [
+            "Mesa de jantar",
+            "Depende",
+            "Tampo de vidro sai sempre"
+          ]
         ]
       }
     },
@@ -29,13 +59,31 @@
       "h2": "Montagem junto da mudança ou avulsa",
       "paragrafos": [
         "Na [mudança residencial](/servicos/mudanca-residencial/), a desmontagem e a montagem podem ir no mesmo pacote. A equipe desmonta na saída e monta na chegada, no mesmo dia, se o volume permitir.",
-        "Também atendemos montagem avulsa. É o caso de quem comprou um roupeiro pela internet, recebeu as caixas no apartamento e não quer passar o fim de semana com a chave Allen. Diga o modelo e o bairro pelo [contato](/contato/)."
+        "Também atendemos montagem avulsa. É o caso de quem comprou um roupeiro pela internet, recebeu as caixas no apartamento e não quer passar o fim de semana com a chave Allen. Diga o modelo e o bairro pelo [contato](/contato/).",
+        "Na montagem avulsa, deixe as caixas no cômodo onde o móvel vai ficar e libere espaço no chão em volta. Confira também se todas as caixas chegaram: alguns roupeiros vêm em três ou quatro volumes, e a falta de um deles impede a montagem. Se perceber peça quebrada ao abrir, fotografe e fale com a loja antes de marcar o serviço."
+      ]
+    },
+    {
+      "h2": "Cuidados com móveis no frio e na umidade",
+      "paragrafos": [
+        "Passo Fundo tem inverno frio e úmido. MDF e aglomerado incham quando ficam molhados, principalmente nas bordas e nos furos dos parafusos. Um furo inchado segura menos o parafuso na hora de montar de novo.",
+        "Por isso as peças desmontadas viajam cobertas, em caminhão fechado, e não ficam no chão da calçada em dia de chuva. Se a mudança cair num dia molhado, a montagem pode ser feita depois de as peças secarem, quando for preciso.",
+        "Também evitamos montar móvel encostado em parede com mofo ou infiltração. Se houver esse problema no imóvel novo, avisamos você antes de encostar o roupeiro. Mais cuidados de época estão em [mudança no inverno e na chuva](/blog/mudanca-no-inverno-e-na-chuva-em-passo-fundo/)."
       ]
     }
   ],
   "faqExtra": [
-    { "p": "Quanto tempo leva para montar um roupeiro?", "r": "Varia muito pelo modelo e pelo número de portas e gavetas. Com a marca e a foto, damos uma estimativa no orçamento." },
-    { "p": "Vocês fixam móveis na parede?", "r": "Fixamos painéis e prateleiras simples quando a parede permite e você indica o local. Antes de furar, pergunte ao condomínio ou confira se não há cano ou fio passando no ponto." },
-    { "p": "O móvel de MDF aguenta ser desmontado de novo?", "r": "Na maioria das vezes, sim. Peças muito antigas ou que já foram montadas várias vezes podem ter furos gastos. Se for o caso, avisamos antes e sugerimos o reforço." }
+    {
+      "p": "Quanto tempo leva para montar um roupeiro?",
+      "r": "Varia muito pelo modelo e pelo número de portas e gavetas. Com a marca e a foto, damos uma estimativa no orçamento."
+    },
+    {
+      "p": "Vocês fixam móveis na parede?",
+      "r": "Fixamos painéis e prateleiras simples quando a parede permite e você indica o local. Antes de furar, pergunte ao condomínio ou confira se não há cano ou fio passando no ponto."
+    },
+    {
+      "p": "O móvel de MDF aguenta ser desmontado de novo?",
+      "r": "Na maioria das vezes, sim. Peças muito antigas ou que já foram montadas várias vezes podem ter furos gastos. Se for o caso, avisamos antes e sugerimos o reforço."
+    }
   ]
 }

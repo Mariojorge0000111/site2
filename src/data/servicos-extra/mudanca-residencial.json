@@ -4,14 +4,27 @@
       "h2": "Quanto o mercado cobra por mudança em Passo Fundo",
       "paragrafos": [
         "Não publicamos tabela de preço própria. Cada mudança tem andar, distância e volume diferentes. Mas é útil ter uma referência antes de pedir orçamento.",
-        "O Guia de Mudanças publica uma tabela de 2026 para mudanças dentro de Passo Fundo. Os valores abaixo são dessa fonte externa. Não são os preços deste site e servem só como ponto de partida."
+        "O Guia de Mudanças publica uma tabela de 2026 para mudanças dentro de Passo Fundo. Os valores abaixo são dessa fonte externa. Não são os preços deste site e servem só como ponto de partida.",
+        "Na prática, mudanças dentro do mesmo bairro e sem escada ficam mais perto do começo da faixa. Apartamentos em andar alto sem elevador, com muitos móveis e montagem incluída, ficam mais perto do fim. Casas maiores ou de quatro quartos passam desses valores."
       ],
       "tabela": {
-        "cabecalho": ["Tipo de imóvel", "Faixa de referência (Guia de Mudanças 2026)"],
+        "cabecalho": [
+          "Tipo de imóvel",
+          "Faixa de referência (Guia de Mudanças 2026)"
+        ],
         "linhas": [
-          ["Kitnet", "R$ 725 a R$ 1.625"],
-          ["Apartamento de 2 quartos", "R$ 1.450 a R$ 3.250"],
-          ["Apartamento de 3 quartos", "R$ 2.900 a R$ 6.175"]
+          [
+            "Kitnet",
+            "R$ 725 a R$ 1.625"
+          ],
+          [
+            "Apartamento de 2 quartos",
+            "R$ 1.450 a R$ 3.250"
+          ],
+          [
+            "Apartamento de 3 quartos",
+            "R$ 2.900 a R$ 6.175"
+          ]
         ]
       }
     },
@@ -33,20 +46,32 @@
       "h2": "Prédios altos e condomínios novos",
       "paragrafos": [
         "Passo Fundo é um dos maiores mercados imobiliários do Rio Grande do Sul e tem muitos prédios em obra. Boa parte das mudanças hoje vai para condomínios novos, com regra própria de horário, elevador de serviço e área de carga.",
-        "Antes do dia, confirme com o síndico ou a portaria o horário permitido e reserve o elevador nos dois prédios. Se um móvel não couber, a gente avalia descer pela escada ou usar o [içamento de móveis](/servicos/icamento/)."
+        "Antes do dia, confirme com o síndico ou a portaria o horário permitido e reserve o elevador nos dois prédios. Se um móvel não couber, a gente avalia descer pela escada ou usar o [içamento de móveis](/servicos/icamento/).",
+        "Também vale avisar a portaria do prédio de saída e do de chegada sobre o caminhão. Em condomínios com vaga de carga pequena, a equipe precisa saber onde estacionar antes de chegar. Isso evita bloquear a rua ou a garagem dos vizinhos."
       ]
     },
     {
       "h2": "Mudança na chuva e no frio",
       "paragrafos": [
         "Em Passo Fundo chove em todos os meses do ano, e no inverno a geada é comum. Por isso a mudança residencial vai em caminhão baú fechado. Na hora de carregar, usamos lona e plástico nos estofados e colchões.",
-        "Nas manhãs de geada, calçada e escada externa ficam escorregadias. Às vezes vale começar um pouco mais tarde. Veja mais em [mudança no inverno e na chuva](/blog/mudanca-no-inverno-e-na-chuva-em-passo-fundo/)."
+        "Nas manhãs de geada, calçada e escada externa ficam escorregadias. Às vezes vale começar um pouco mais tarde. Veja mais em [mudança no inverno e na chuva](/blog/mudanca-no-inverno-e-na-chuva-em-passo-fundo/).",
+        "Para quem vai de Passo Fundo para Marau, Carazinho ou outra cidade da região, a chuva na estrada também conta. Por isso a carga sai do imóvel já amarrada e coberta, e não é reorganizada no meio do caminho.",
+        "Quer ver o atendimento perto de você? Veja a lista de [bairros](/bairros/)."
       ]
     }
   ],
   "faqExtra": [
-    { "p": "Os preços do Guia de Mudanças são os de vocês?", "r": "Não. São uma referência de mercado publicada por outra fonte. O nosso valor é passado depois que você manda a lista de móveis e os endereços." },
-    { "p": "Com quanto tempo de antecedência devo marcar?", "r": "Quanto antes, melhor, principalmente no fim e no começo do mês e nos períodos de matrícula das universidades. Mesmo assim, consulte para datas próximas." },
-    { "p": "Vocês levam plantas e vasos?", "r": "Vasos pequenos e médios, sim, bem presos e protegidos. Plantas grandes e frágeis sofrem com o frio e o vento; às vezes é melhor levar no próprio carro." }
+    {
+      "p": "Os preços do Guia de Mudanças são os de vocês?",
+      "r": "Não. São uma referência de mercado publicada por outra fonte. O nosso valor é passado depois que você manda a lista de móveis e os endereços."
+    },
+    {
+      "p": "Com quanto tempo de antecedência devo marcar?",
+      "r": "Quanto antes, melhor, principalmente no fim e no começo do mês e nos períodos de matrícula das universidades. Mesmo assim, consulte para datas próximas."
+    },
+    {
+      "p": "Vocês levam plantas e vasos?",
+      "r": "Vasos pequenos e médios, sim, bem presos e protegidos. Plantas grandes e frágeis sofrem com o frio e o vento; às vezes é melhor levar no próprio carro."
+    }
   ]
 }

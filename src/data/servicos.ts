@@ -156,7 +156,7 @@ export const SERVICOS: Servico[] = [
     nome: 'Mudança comercial',
     h1: 'Mudança comercial em Passo Fundo',
     title: 'Mudança comercial em Passo Fundo: lojas e escritórios',
-    descricao: 'Mudança comercial em Passo Fundo para escritório, loja e consultório. Plano por etapas, horário fora do expediente e ajuda com a regra de caminhão no Centro.',
+    descricao: 'Mudança comercial em Passo Fundo para escritório, loja e consultório. Plano por etapas, horário fora do expediente e ajuda com a regra do Centro.',
     resumo: 'Escritórios, lojas e consultórios, com plano para a empresa parar o mínimo.',
     imagem: 'servico-mudanca-comercial',
     imagemAlt: 'Mulher carregando caixa com materiais de escritório',
