@@ -254,3 +254,6 @@ a.card:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
 /* Evita estouro de largura em grids no celular */
 .dividido > *, .cards > *, .servicos-grade > * { min-width: 0; }
 .form input, .form textarea, .form select { width: 100%; min-width: 0; }
+
+.compromissos.tres { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) { .compromissos.tres { grid-template-columns: 1fr; } }

@@ -1,0 +1,70 @@
+{
+  "slug": "sao-jose",
+  "nome": "São José",
+  "prep": "no",
+  "titulo": "Frete e Mudança no São José – Passo Fundo",
+  "descricao": "Frete e mudança no São José, Passo Fundo, bairro do campus da UPF e do Aeroporto Lauro Kurtz, com acesso pela BR-285 e RS-135. Peça seu orçamento.",
+  "h1": "Frete e mudança no São José, Passo Fundo",
+  "sobre": "No São José ficam o Campus I da UPF, às margens da BR-285, e o Aeroporto Lauro Kurtz. O setor inclui ainda os loteamentos Leonardo Ilha I e II e o da Brigada Militar. O bairro se formou sobretudo nas décadas de 1970 e 1980, com famílias vindas do interior. Hoje, frete no São José mistura rodovia, campus universitário e ruas residenciais.",
+  "secoes": [
+    {
+      "h2": "Rodovia dentro do bairro: BR-285 e RS-135",
+      "paragrafos": [
+        "O São José tem rodovia dentro dos limites: a BR-285, onde ficam o campus e o aeroporto, e a RS-135, além da Estrada do Trigo. Para caminhão grande, é um acesso mais simples do que as ruas da área central, e fora da restrição de peso que vale para a Av. Brasil e pontos do Centro.",
+        "Dentro do bairro, as avenidas Sílvio Romero, Padre Antônio Vieira, Nova Olinda, Luiz de Camões, Telmo Ilha e Lucas Dias organizam o trânsito. Muitas ruas levam nome de capital ou estado: Recife, Curitiba, Goiânia, Cuiabá, Ceará, Piauí. No Loteamento da Brigada Militar, várias ruas trazem o nome do loteamento no próprio cadastro de CEP."
+      ]
+    },
+    {
+      "h2": "Mudança de quem estuda na UPF",
+      "paragrafos": [
+        "A UPF não tem moradia estudantil no campus. Quem chega para estudar aluga por conta própria, e morar no São José encurta o trajeto até as aulas.",
+        "O calendário dita as datas. Em 2026, o primeiro semestre foi de março a julho e o segundo começou em agosto, com provas a partir de meados de dezembro. Quem entrega a kitnet no fim do ano, ou chega para a matrícula de fevereiro, precisa reservar a data cedo.",
+        "Junto ao campus está previsto o Viva Garden Park UPF, bairro planejado apresentado em 2025. Novos endereços devem surgir na região nos próximos anos, e com eles mais mudanças de quem chega."
+      ]
+    },
+    {
+      "h2": "Casas de família e ruas de loteamento",
+      "paragrafos": [
+        "Longe do campus, o São José é bairro de casas. Um estudo da Unesp sobre a ocupação do bairro ouviu famílias vindas de Água Santa, Tapejara, Sananduva e Mato Castelhano, muitas morando ali havia mais de dez anos. Casa de família com muitos anos de uso costuma ter mais volume do que parece: ferramentas, móveis antigos, coisas guardadas no galpão.",
+        "O bairro tem também travessa e beco, como a Travessa Panamá e o Beco do Oitavo. Nesses endereços, uma foto da rua ajuda a decidir se o caminhão chega até a porta."
+      ]
+    }
+  ],
+  "servicos": {
+    "frete": "Frete no São José tem uma vantagem: a BR-285 e a RS-135 passam pelo bairro. Caminhão maior entra e sai sem cruzar o Centro. Atendemos cargas que vão para outras cidades, entregas de móveis comprados fora e transporte de equipamentos para quem trabalha ou estuda perto do campus.",
+    "carreto": "Carreto São José Passo Fundo é a escolha para estudante da UPF que troca de kitnet: cama, colchão, escrivaninha, caixas de livros. O trajeto pode ser bem curto, dentro do próprio bairro ou até o Petrópolis. Mande fotos pelo WhatsApp e diga se o prédio tem escada.",
+    "mudanca-residencial": "A mudança residencial no São José atende famílias dos loteamentos Leonardo Ilha e da Brigada Militar e também quem sai de apartamento perto do campus. Fazemos a lista, desmontamos os móveis grandes e protegemos com manta. Com chuva, a carga vai coberta, porque Passo Fundo chove o ano todo.",
+    "mudanca-comercial": "Empresas próximas da BR-285 e do aeroporto precisam de mudança comercial com horário certo. Retiramos móveis de escritório, arquivos e equipamentos, identificamos por sala e entregamos no novo endereço na ordem de montagem. O acesso pela rodovia facilita usar veículo maior quando o volume pede.",
+    "montagem-de-moveis": "Quem chega para estudar precisa montar o quarto do zero. Fazemos montagem de móveis no São José sob pedido: cama, escrivaninha, roupeiro, estante. Na mudança, desmontamos na saída e montamos no destino. As ferragens vão em saco separado e identificado por móvel, para nada se perder no caminho."
+  },
+  "faq": [
+    {
+      "p": "Vocês fazem mudança de kitnet perto do campus da UPF?",
+      "r": "Fazemos. Como a UPF não oferece moradia no campus, os alunos alugam por conta própria. Kitnet costuma caber num carreto, com veículo pequeno. Mande os dois endereços e fotos pelo WhatsApp, e reserve a data cedo se for perto do início do semestre."
+    },
+    {
+      "p": "Caminhão grande entra no São José?",
+      "r": "Na maioria dos casos, sim. O bairro tem acesso pela BR-285 e pela RS-135, e a restrição de peso do decreto municipal vale para a Av. Brasil e pontos do Centro. Em rua mais estreita de loteamento, avaliamos o acesso pelas fotos antes de definir o veículo."
+    },
+    {
+      "p": "Atendem endereços perto do Aeroporto Lauro Kurtz?",
+      "r": "Atendemos. O aeroporto fica na BR-285, dentro do São José. Para endereços no entorno, combinamos o ponto de parada e o horário, e o caminhão usa a própria rodovia para chegar. Também levamos caixas e volumes de quem está chegando à cidade."
+    }
+  ],
+  "proximos": [
+    "petropolis"
+  ],
+  "fontes": [
+    "https://cepsbrasil.com.br/rs/passo-fundo/sao-jose",
+    "https://www.pmpf.rs.gov.br/revisao-do-plano-diretor/wp-content/uploads/sites/56/2021/12/revisao_pddi_mapa_divisao_regional.pdf",
+    "https://en.wikipedia.org/wiki/Passo_Fundo",
+    "https://www.doc.surf/wiki/passo-fundo",
+    "https://www.pmpf.rs.gov.br/secretaria-de-seguranca-publica/2021/06/21/circulacao-de-caminhoes-no-centro-e-restringida-14921/",
+    "https://www.climatempo.com.br/climatologia/361/passofundo-br",
+    "https://www.periodicos.rc.biblioteca.unesp.br/index.php/estgeo/article/view/215",
+    "https://www.pravaler.com.br/blog/ensino-superior/universidade-de-passo-fundo-saiba-tudo-sobre-a-instituicao/",
+    "https://www.etsit.upm.es/fileadmin/documentos/servicios/internacionales/alumnosETSIT/universidades/Brasil/Infosheet_UPF_2025.pdf",
+    "https://www.academicjobs.com/employers/universidade-de-passo-fundo/11457/academic-calendar",
+    "https://www.jornaldocomercio.com/jornal-cidades/2025/09/1217812-bairro-planejado-sera-criado-junto-ao-campus-da-upf-em-passo-fundo.html"
+  ]
+}

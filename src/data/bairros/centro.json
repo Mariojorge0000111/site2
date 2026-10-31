@@ -1,0 +1,75 @@
+{
+  "slug": "centro",
+  "nome": "Centro",
+  "prep": "no",
+  "titulo": "Frete e Mudança no Centro de Passo Fundo",
+  "descricao": "Frete e mudança no Centro de Passo Fundo com veículo do porte certo para a Av. Brasil e prédios com elevador. Peça seu orçamento pelo WhatsApp.",
+  "h1": "Frete e mudança no Centro de Passo Fundo",
+  "sobre": "O Centro é onde Passo Fundo mais mora em apartamento. Junto com a Vila Vergueiro, que forma o mesmo setor no Plano Diretor, soma cerca de 26,9 mil moradores pela estimativa do IBGE de 2024. Para quem faz frete no Centro, isso quer dizer prédio, elevador, horário de condomínio e uma regra municipal que limita caminhões pesados na Av. Brasil.",
+  "secoes": [
+    {
+      "h2": "Caminhão acima de 7 toneladas na Av. Brasil: o que muda",
+      "paragrafos": [
+        "Desde 2021, o Decreto Municipal 78 restringe a circulação de caminhões com carga acima de sete toneladas na Av. Brasil e em outros pontos da área central. Quem descumpre pode ser autuado por agente de trânsito ou por câmera.",
+        "Para a maioria das mudanças de apartamento, a saída é simples: usar um caminhão de porte menor e, se preciso, fazer duas viagens. Quando a carga não cabe nesse limite, a prefeitura emite autorização em caráter excepcional, para data e horário definidos. O pedido sai pelo site da Secretaria de Segurança, pelo app Cidadão Online, informando a placa, ou pelo e-mail seg@pmpf.rs.gov.br.",
+        "Por isso, no orçamento, perguntamos a rua exata dos dois endereços. Assim o veículo é definido antes do dia, e não na porta do prédio."
+      ]
+    },
+    {
+      "h2": "Kitnets, apartamentos e o calendário das faculdades",
+      "paragrafos": [
+        "O Centro tem a maior concentração de apartamentos da cidade e a maior oferta de kitnets. Só o estoque de uma imobiliária local, em outubro de 2025, somava 79 kitnets e 211 apartamentos de um dormitório no bairro.",
+        "Esse perfil pesa na logística. Mudança de kitnet costuma caber num carreto. Já um apartamento de dois quartos pede reserva de elevador, proteção nas paredes do hall e conferência das medidas do sofá antes de descer. A UFFS fica na Rua Capitão Araújo, e quem estuda ali e vai trocar de endereço perto do início das aulas deve reservar a data cedo."
+      ]
+    },
+    {
+      "h2": "Pontos do Centro que pedem atenção na carga e descarga",
+      "paragrafos": [
+        "Alguns endereços do bairro exigem um cuidado a mais na hora de parar o veículo:"
+      ],
+      "lista": [
+        "Parque Linear da Av. Brasil, revitalizado em 2024 entre a Rua Capitão Araújo e a Rua Livramento, com muita gente circulando a pé.",
+        "Teatro Municipal Múcio de Castro e Teatro do SESC, também na Av. Brasil: em dia de espetáculo, combine o horário com antecedência.",
+        "Hospital São Vicente de Paulo (Rua Teixeira Soares) e Hospital da Cidade (Rua Tiradentes): nada de parar na frente das entradas.",
+        "Vila Vergueiro: terreno mais alto, com vista da cidade e saída fácil para a BR-285."
+      ]
+    }
+  ],
+  "servicos": {
+    "frete": "Frete no Centro de Passo Fundo costuma envolver eletrodomésticos grandes que sobem ou descem de prédio: geladeira, máquina de lavar, fogão. Escolhemos o veículo pensando no limite de peso da área central, protegemos cada peça com manta e confirmamos antes se o elevador comporta a geladeira em pé.",
+    "carreto": "O carreto no Centro é o serviço típico de kitnet: cama, colchão, algumas caixas e um micro-ondas. Como o bairro tem a maior oferta de kitnets da cidade, muitas vezes o trajeto é curto, de um prédio para outro a poucas quadras. Mande fotos pelo WhatsApp e o valor sai antes.",
+    "mudanca-residencial": "Mudança residencial no Centro quase sempre começa no condomínio: reserva do elevador de serviço, horário permitido e vaga para encostar o caminhão. Fazemos a lista com você, desmontamos o que for preciso e embalamos com manta. Se o destino também for prédio, combinamos os dois condomínios para o mesmo dia.",
+    "mudanca-comercial": "Consultórios, escritórios e lojas da área central ficam perto de hospitais, bancos e do comércio da Av. Brasil. Na mudança comercial no Centro, planejamos o horário fora do pico, respeitamos as áreas de carga e descarga previstas no decreto municipal e levamos arquivos e equipamentos identificados por sala.",
+    "montagem-de-moveis": "Apartamento compacto pede roupeiro desmontado peça por peça, porque elevador e corredor raramente aceitam o móvel inteiro. Na montagem de móveis no Centro, desmontamos na origem, levamos os parafusos separados por móvel e montamos no novo endereço, sob pedido. Também montamos móveis novos que chegam na caixa."
+  },
+  "faq": [
+    {
+      "p": "Meu prédio fica na Av. Brasil. O caminhão pode parar na frente?",
+      "r": "Depende do porte. Caminhões com carga acima de sete toneladas têm circulação restrita na Av. Brasil e em pontos do Centro pelo Decreto 78/2021. Para mudança de apartamento usamos veículo menor. Se for preciso um maior, a autorização é pedida à Secretaria de Segurança para data e horário definidos."
+    },
+    {
+      "p": "Vocês fazem mudança de kitnet perto da UFFS?",
+      "r": "Fazemos. Kitnet costuma caber num carreto, com veículo menor e menos ajudantes. Diga o endereço de saída, o de chegada e se há elevador nos dois. Se a data for perto do início das aulas, vale pedir o orçamento com alguns dias de folga."
+    },
+    {
+      "p": "Atendem a Vila Vergueiro também?",
+      "r": "Atendemos. A Vergueiro está no mesmo setor do Centro no Plano Diretor, mas tem terreno mais alto e acesso fácil à BR-285, o que ajuda quando a mudança segue para outra cidade. Para endereços perto do Parque Banhado da Vergueiro, combinamos o ponto de parada antes."
+    }
+  ],
+  "proximos": [
+    "boqueirao",
+    "annes",
+    "vila-rodrigues",
+    "vera-cruz"
+  ],
+  "fontes": [
+    "https://bortoliniimoveis.com.br/blog/conveniencia-e-grande-oferta-de-imoveis-conheca-o-centro-de-passo-fundo",
+    "https://verdiimoveis.com.br/blog/dicas-do-bairro/quais-os-melhores-bairros-de-passo-fundo-para-morar/",
+    "https://www.pmpf.rs.gov.br/secretaria-de-seguranca-publica/2021/06/21/circulacao-de-caminhoes-no-centro-e-restringida-14921/",
+    "https://www.pmpf.rs.gov.br/secretaria-de-seguranca-publica/servicos/autorizacao-para-circulacao-de-caminhao/",
+    "https://www.pmpf.rs.gov.br/revisao-do-plano-diretor/wp-content/uploads/sites/56/2021/12/revisao_pddi_mapa_divisao_regional.pdf",
+    "https://www.doc.surf/wiki/passo-fundo",
+    "https://www.cronoshare.com.br/servicos/fretes/rio-grande-do-sul/passo-fundo",
+    "https://uffs.edu.br/campi/passo-fundo/conselhos/conselho_comunitario/relatos-das-reunioes/relato-da-1a-sessao-ordinaria-de-2021-do-conselho-comunitaria-04-10.2021/@@download/file"
+  ]
+}

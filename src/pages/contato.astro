@@ -18,12 +18,12 @@ import { SITE, linkWhatsapp } from '../config';
 
   <section class="wrap dividido" style="padding-bottom:96px;align-items:start">
     <form class="form caixa" id="orcamento">
-      <label>Seu nome<input name="nome" autocomplete="name" required /></label>
-      <label>Serviço
+      <label>Como podemos te chamar?<input name="nome" autocomplete="name" required /></label>
+      <label>Tipo de serviço
         <select name="servico">
-          <option>Frete</option><option>Carreto</option><option>Mudança residencial</option>
-          <option>Mudança comercial</option><option>Desmontagem e montagem de móveis</option>
-          <option>Içamento de móveis</option><option>Embalagem</option>
+          <option>Mudança de casa ou apartamento</option><option>Mudança de empresa</option><option>Frete de móveis</option>
+          <option>Carreto (poucos itens)</option><option>Montar e desmontar móveis</option>
+          <option>Içamento pela janela</option><option>Embalar louças e frágeis</option>
         </select>
       </label>
       <div class="duas">
@@ -31,23 +31,23 @@ import { SITE, linkWhatsapp } from '../config';
         <label>Destino (bairro ou cidade)<input name="destino" required /></label>
       </div>
       <div class="duas">
-        <label>Data desejada<input name="data" type="date" /></label>
-        <label>Escada ou elevador?
+        <label>Para quando?<input name="data" type="date" /></label>
+        <label>Como é o acesso?
           <select name="acesso">
-            <option>Térreo / casa</option><option>Prédio com elevador</option><option>Prédio sem elevador</option><option>Não sei</option>
+            <option>Casa ou térreo</option><option>Apartamento com elevador</option><option>Apartamento só com escada</option><option>Ainda não sei</option>
           </select>
         </label>
       </div>
-      <label>O que precisa levar<textarea name="itens" rows="4" placeholder="Ex.: roupeiro de 6 portas, geladeira, sofá e 20 caixas"></textarea></label>
-      <button class="btn btn-preto" type="submit">Enviar pelo WhatsApp</button>
-      <p style="font-size:.9rem;color:var(--suave);margin:0">O WhatsApp abre com a mensagem pronta. Nada é enviado antes de você tocar em enviar.</p>
+      <label>Lista dos itens<textarea name="itens" rows="4" placeholder="Ex.: roupeiro de 6 portas, geladeira, sofá e 20 caixas"></textarea></label>
+      <button class="btn btn-preto" type="submit">Montar mensagem no WhatsApp</button>
+      <p style="font-size:.9rem;color:var(--suave);margin:0">A conversa abre com o texto montado. Você revisa e só envia se quiser.</p>
     </form>
     <div>
       <Img nome="contato" alt="Casal sorrindo segurando as chaves da casa nova" />
       <div style="margin-top:32px">
-        <h2 style="font-size:1.8rem">Prefere falar direto?</h2>
-        <p style="margin-top:12px;color:var(--suave)">Chame no WhatsApp e mande fotos dos itens. {SITE.horario}.</p>
-        <p class="acoes"><a class="btn" href={linkWhatsapp()} target="_blank" rel="noopener">Abrir o WhatsApp</a></p>
+        <h2 style="font-size:1.8rem">Quer mandar fotos?</h2>
+        <p style="margin-top:12px;color:var(--suave)">Fotos do roupeiro, da escada e da rua ajudam a acertar o veículo. Atendimento: {SITE.horario}.</p>
+        <p class="acoes"><a class="btn" href={linkWhatsapp()} target="_blank" rel="noopener">Conversar agora</a></p>
       </div>
     </div>
   </section>
@@ -59,13 +59,13 @@ import { SITE, linkWhatsapp } from '../config';
       const data = d.get('data') ? new Date(d.get('data') + 'T12:00').toLocaleDateString('pt-BR') : 'a combinar';
       const msg = [
         `Oi! Encontrei o site e quero um orçamento.`,
-        `Nome: ${d.get('nome')}`,
-        `Serviço: ${d.get('servico')}`,
-        `Origem: ${d.get('origem')}`,
-        `Destino: ${d.get('destino')}`,
-        `Data: ${data}`,
+        `Sou: ${d.get('nome')}`,
+        `Preciso de: ${d.get('servico')}`,
+        `Saindo de: ${d.get('origem')}`,
+        `Indo para: ${d.get('destino')}`,
+        `Quando: ${data}`,
         `Acesso: ${d.get('acesso')}`,
-        `Itens: ${d.get('itens') || 'vou mandar fotos'}`,
+        `O que vai: ${d.get('itens') || 'mando fotos em seguida'}`,
       ].join('\n');
       window.open(`https://wa.me/${numero}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
     });

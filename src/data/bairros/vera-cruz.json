@@ -1,0 +1,75 @@
+{
+  "slug": "vera-cruz",
+  "nome": "Vera Cruz",
+  "prep": "no",
+  "titulo": "Frete e Mudança no Vera Cruz – Passo Fundo",
+  "descricao": "Frete e mudança no Vera Cruz, Passo Fundo: Av. Rio Grande, Av. Porto Alegre e saída pela BR-285, entre casas e prédios novos. Peça o orçamento.",
+  "h1": "Frete e mudança no Vera Cruz, Passo Fundo",
+  "sobre": "O Vera Cruz fica entre o Centro e a passagem para outros bairros, e por isso virou foco da construção civil. Tem comércio, bancos, padarias, escolas, unidades de saúde e igrejas. No Plano Diretor, o setor inclui a Hípica, o São Bento, o Loteamento Nonoai, o Parque Leão XIII e parte da Dona Eliza. Uma mudança no Vera Cruz raramente é igual a outra.",
+  "secoes": [
+    {
+      "h2": "Avenidas e ruas com nome de cidade",
+      "paragrafos": [
+        "As vias principais do Vera Cruz são a Av. Rio Grande, a Av. Porto Alegre, a Av. Moacir da Motta Fortes e a Av. do Parque. A BR-285 também passa pelo bairro, o que dá ao caminhão uma entrada sem cruzar a área central.",
+        "Muitas ruas homenageiam cidades gaúchas: Sananduva, Novo Hamburgo, Cruz Alta, Viamão, Alegrete. São cerca de 130 logradouros. Como outros bairros de Passo Fundo também têm ruas com nome de cidade, pedimos sempre o CEP junto com o endereço."
+      ]
+    },
+    {
+      "h2": "Prédio em obra ao lado de casa térrea",
+      "paragrafos": [
+        "O interesse das construtoras faz o bairro misturar edifícios novos e casas de três quartos, como as que aparecem nos anúncios da Rua Sananduva. Para o caminhão, prédio novo quer dizer elevador e regra de condomínio. Casa quer dizer portão, pátio e, às vezes, uma garagem estreita para manobrar.",
+        "Rua com obra em andamento também pede atenção: caçamba, betoneira e caminhão de material ocupam a frente dos lotes. Vale olhar a rua alguns dias antes e avisar a gente se houver obra vizinha."
+      ]
+    },
+    {
+      "h2": "Escolas no caminho",
+      "paragrafos": [
+        "O bairro tem escolas municipais como a EMEF Senador Pasqualini, na Rua Ludovico Della Mea, e a EMEI Ursinhos Carinhosos, na Rua São Sebastião. Perto de escola, a entrada e a saída de alunos enchem a rua de carros. Mudança nessas quadras rende mais fora desses horários."
+      ]
+    },
+    {
+      "h2": "Hípica, São Bento e as vilas do setor",
+      "paragrafos": [
+        "Quem diz que mora no Vera Cruz pode estar em lugares bem diferentes. O cadastro de CEP do bairro marca, entre parênteses, o Loteamento Nonoai, o Parque Leão XIII e a Vila Eliza. Há também travessas, como a do Carmo e a Santa Maria, que pedem veículo menor.",
+        "No inverno, Passo Fundo tem geadas frequentes. Em manhã de geada, a rampa da garagem e a calçada ficam escorregadias, e a equipe espera o sol secar o piso antes de carregar peças pesadas. Já a chuva cai o ano inteiro, por isso a carga sai coberta."
+      ]
+    }
+  ],
+  "servicos": {
+    "frete": "O frete no Vera Cruz aproveita a BR-285 para entrar e sair do bairro sem cruzar o Centro. Isso ajuda quando a carga é de móveis comprados fora da cidade ou vai para outro município. Dentro do bairro, a Av. Rio Grande e a Av. Porto Alegre são as rotas principais até o endereço.",
+    "carreto": "Carreto Vera Cruz Passo Fundo atende pedidos pequenos e rápidos: uma máquina de lavar, um sofá vendido pela internet, as caixas de quem volta para a casa dos pais. Você informa os endereços e manda fotos pelo WhatsApp. O valor é passado antes de sair.",
+    "mudanca-residencial": "Na mudança residencial no Vera Cruz, a equipe chega preparada para os dois cenários do bairro: casa com portão e garagem, ou apartamento em prédio recente com elevador. Fazemos a lista, desmontamos o necessário e embalamos com manta. Se houver obra na rua, ajustamos o ponto de parada.",
+    "mudanca-comercial": "Padarias, farmácias, mercados e escritórios mantêm o comércio do Vera Cruz ativo. Na mudança comercial, planejamos a retirada de balcões, vitrines e estoque num horário que não pare o atendimento por muito tempo. Tudo vai identificado por área, para montar o novo ponto na ordem certa.",
+    "montagem-de-moveis": "Apartamento novo costuma ser entregue vazio, e tudo precisa ser montado do zero. Fazemos montagem de móveis no Vera Cruz sob pedido: roupeiros, camas, racks e estantes. Na mudança, desmontamos na saída e montamos na chegada, com os parafusos separados em saco identificado por peça."
+  },
+  "faq": [
+    {
+      "p": "Vocês atendem a Hípica e a Dona Eliza também?",
+      "r": "Atendemos. Pelo Plano Diretor, a Hípica, o São Bento, o Loteamento Nonoai, o Parque Leão XIII e parte da Dona Eliza estão no mesmo setor do Vera Cruz. Informe o loteamento junto com a rua e o CEP para o motorista chegar direto."
+    },
+    {
+      "p": "Minha rua tem obra. A mudança é possível?",
+      "r": "Normalmente sim. Pedimos fotos da frente do imóvel e perguntamos se há caçamba ou caminhão de obra parado. Se o espaço for curto, usamos veículo menor ou paramos na esquina e levamos os volumes no carrinho."
+    },
+    {
+      "p": "Dá para mudar do Vera Cruz para outra cidade?",
+      "r": "Dá. O bairro tem acesso à BR-285, rodovia que corta Passo Fundo no sentido leste–oeste. Para mudança intermunicipal, passamos o orçamento com base no volume, na distância e nos serviços de desmontagem e montagem."
+    }
+  ],
+  "proximos": [
+    "centro",
+    "annes",
+    "santa-marta"
+  ],
+  "fontes": [
+    "https://verdiimoveis.com.br/blog/dicas-do-bairro/quais-os-melhores-bairros-de-passo-fundo-para-morar/",
+    "https://cepsbrasil.com.br/rs/passo-fundo/vera-cruz",
+    "https://www.pmpf.rs.gov.br/revisao-do-plano-diretor/wp-content/uploads/sites/56/2021/12/revisao_pddi_mapa_divisao_regional.pdf",
+    "https://en.wikipedia.org/wiki/Passo_Fundo",
+    "https://www.climatempo.com.br/climatologia/361/passofundo-br",
+    "https://loft.com.br/imovel/casa-rua-sananduva-vera-cruz-passo-fundo-3-quartos-201m2/cu0pneye",
+    "https://www.escol.as/247198-senador-pasqualini",
+    "https://www.escol.as/253112-ursinhos-carinhosos",
+    "https://au.hotels.com/nh11127969/hotels-in-santa-marta-passo-fundo-brazil"
+  ]
+}
