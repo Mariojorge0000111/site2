@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Img from '../components/Img.astro';
-import { SITE, linkWhatsapp } from '../config';
+import { SITE, linkWhatsapp, telefoneVisivel } from '../config';
 ---
 <Base
   title="Orçamento de Mudança e Frete em Passo Fundo"
@@ -13,6 +13,7 @@ import { SITE, linkWhatsapp } from '../config';
       <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Contato</nav>
       <h1>Orçamento pelo WhatsApp.</h1>
       <p class="lead" style="margin-top:18px">Preencha os campos e a mensagem abre pronta no WhatsApp. Com mais detalhes, o valor sai mais certo.</p>
+      <p style="margin-top:14px">WhatsApp {telefoneVisivel()}. Área de atendimento: {SITE.cidade}, {SITE.estado} e cidades da região. {SITE.horario}.</p>
     </div>
   </section>
 
@@ -46,7 +47,7 @@ import { SITE, linkWhatsapp } from '../config';
       <Img nome="contato" alt="Casal sorrindo segurando as chaves da casa nova" />
       <div style="margin-top:32px">
         <h2 style="font-size:1.8rem">Quer mandar fotos?</h2>
-        <p style="margin-top:12px;color:var(--suave)">Fotos do roupeiro, da escada e da rua ajudam a acertar o veículo. Atendimento: {SITE.horario}.</p>
+        <p style="margin-top:12px;color:var(--suave)">Fotos do roupeiro, da escada e da rua ajudam a acertar o veículo. Atendimento: {SITE.horario}. WhatsApp {telefoneVisivel()}.</p>
         <p class="acoes"><a class="btn" href={linkWhatsapp()} target="_blank" rel="noopener">Conversar agora</a></p>
       </div>
     </div>

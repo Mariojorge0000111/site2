@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Cta from '../../components/Cta.astro';
 import Img from '../../components/Img.astro';
 import { REGIAO } from '../../config';
+import { hrefCidade } from '../../data/cidades';
 import { BAIRROS, OUTROS_BAIRROS } from '../../data/bairros';
 
 const ordenados = [...BAIRROS].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
@@ -35,7 +36,7 @@ const ordenados = [...BAIRROS].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-B
         <h2>Cidades da região também.</h2>
         <p class="lead">Fretes e mudanças entre Passo Fundo e as cidades vizinhas, pela RS-324, BR-285 e BR-153.</p>
         <ul class="bairros-lista" style="margin-top:28px">
-          {REGIAO.map((c) => <li><a href="/contato/">{c}</a></li>)}
+          {REGIAO.map((c) => <li><a href={hrefCidade(c) ?? '/contato/'}>{c}</a></li>)}
         </ul>
       </div>
       <Img nome="cidade" alt="Estrada cortando lavouras vista de cima" />

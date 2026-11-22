@@ -1,0 +1,71 @@
+---
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Img from '../../components/Img.astro';
+import { REGIAO, linkWhatsapp } from '../../config';
+import { CIDADES } from '../../data/cidades';
+
+const outras = REGIAO.filter((nome) => !CIDADES.some((c) => c.nome === nome));
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Frete e mudança nas cidades da região de Passo Fundo',
+  itemListElement: CIDADES.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.h1,
+    url: new URL(`/cidades/${c.slug}/`, Astro.site).href,
+  })),
+};
+---
+<Base
+  title="Frete nas cidades da região de Passo Fundo"
+  description="Frete e mudança de Passo Fundo para as cidades da região. Carazinho (BR-285) e Marau (RS-324) têm página própria. As outras vizinhas entram no WhatsApp."
+  schema={schema}
+  ogImage="cidade"
+>
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / Cidades da região</nav>
+      <h1>Cidades da região de Passo Fundo</h1>
+      <p class="lead" style="margin-top:18px">O atendimento parte de Passo Fundo. Carazinho e Marau têm página com a rota e o que informar. As outras vizinhas também entram: mande os endereços.</p>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:24px">
+    <ul class="bairros-lista">
+      {CIDADES.map((c) => (
+        <li><a href={`/cidades/${c.slug}/`}>{c.nome}</a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="secao" style="padding-top:12px">
+    <div class="wrap">
+      <div class="cards">
+        {CIDADES.map((c) => (
+          <a class="card" href={`/cidades/${c.slug}/`}>
+            <h3>{c.h1}</h3>
+            <p>{c.resumo}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao-preta">
+    <div class="wrap dividido">
+      <div>
+        <h2>Também atendemos.</h2>
+        <p class="lead">Coxilha, Pontão e as outras cidades da região não têm página própria ainda. O orçamento segue o mesmo caminho: endereços, lista e fotos.</p>
+        <ul class="bairros-lista" style="margin-top:28px">
+          {outras.map((c) => <li><a href={linkWhatsapp(`Oi! Quero um orçamento de frete ou mudança entre Passo Fundo e ${c}.`)} target="_blank" rel="noopener">{c}</a></li>)}
+        </ul>
+        <p style="margin-top:22px"><a class="link" href="/blog/frete-passo-fundo-para-cidades-da-regiao/">Como funciona o frete para a região</a></p>
+      </div>
+      <Img nome="cidade" alt="Estrada cortando lavouras vista de cima" />
+    </div>
+  </section>
+
+  <Cta titulo="Frete para outra cidade?" texto="Diga de onde sai, para onde vai e o que vai na carga. O valor chega pelo WhatsApp." />
+</Base>

@@ -1,6 +1,7 @@
 ---
-import { SITE, linkWhatsapp, REGIAO } from '../config';
+import { SITE, linkWhatsapp, REGIAO, telefoneSchema, telefoneVisivel } from '../config';
 import { BAIRROS } from '../data/bairros';
+import { CIDADES } from '../data/cidades';
 import { SERVICOS } from '../data/servicos';
 import '../styles/global.css';
 
@@ -20,6 +21,11 @@ const comMarca = `${title} | ${SITE.nome}`;
 const fullTitle = title.includes(SITE.nome) || comMarca.length > 60 ? title : comMarca;
 const imagemOg = new URL(`/images/${ogImage}.webp`, Astro.site).href;
 
+const cidadeSchema = (nome: string) => ({
+  '@type': 'City',
+  name: nome,
+  containedInPlace: { '@type': 'State', name: SITE.estadoNome },
+});
 const negocio = {
   '@context': 'https://schema.org',
   '@type': 'MovingCompany',
@@ -28,9 +34,20 @@ const negocio = {
   description: SITE.slogan,
   url: new URL('/', Astro.site).href,
   image: new URL('/images/hero.webp', Astro.site).href,
-  areaServed: [{ '@type': 'City', name: 'Passo Fundo' }, ...REGIAO.map((c) => ({ '@type': 'City', name: c }))],
-  openingHours: 'Mo-Sa 07:30-18:30',
-  ...(SITE.telefone ? { telephone: SITE.telefone } : {}),
+  logo: new URL('/favicon.svg', Astro.site).href,
+  telephone: telefoneSchema(),
+  areaServed: [cidadeSchema(SITE.cidade), ...REGIAO.map(cidadeSchema)],
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: SITE.latitude,
+    longitude: SITE.longitude,
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: SITE.dias,
+    opens: SITE.abre,
+    closes: SITE.fecha,
+  },
 };
 const schemas = [negocio, ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
 
@@ -110,8 +127,11 @@ const wa = linkWhatsapp();
               <span>{SITE.nome}</span>
             </a>
             <p>{SITE.slogan}.</p>
+            <p>Área de atendimento: {SITE.cidade}, {SITE.estado} e cidades da região.</p>
+            <p>WhatsApp {telefoneVisivel()}</p>
             <p>{SITE.horario}</p>
             <p><a href={wa} target="_blank" rel="noopener">Orçamento pelo WhatsApp</a></p>
+            {CIDADES.map((c) => <p><a href={`/cidades/${c.slug}/`}>Frete para {c.nome}</a></p>)}
           </div>
           <div>
             <p class="rodape-titulo">Serviços</p>
@@ -130,6 +150,7 @@ const wa = linkWhatsapp();
               <li><a href="/quem-somos/">Quem somos</a></li>
               <li><a href="/equipe/">Equipe</a></li>
               <li><a href="/blog/">Blog</a></li>
+              <li><a href="/cidades/">Cidades da região</a></li>
               <li><a href="/contato/">Contato</a></li>
             </ul>
           </div>

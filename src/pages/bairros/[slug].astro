@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Cta from '../../components/Cta.astro';
 import Faq from '../../components/Faq.astro';
 import Img from '../../components/Img.astro';
-import { linkWhatsapp } from '../../config';
+import { SITE, linkWhatsapp } from '../../config';
 import { BAIRROS, bairro as achar, type Bairro } from '../../data/bairros';
 import { PRINCIPAIS } from '../../data/servicos';
 
@@ -30,7 +30,15 @@ const schema = [
     '@type': 'Service',
     name: b.h1,
     serviceType: 'Frete e mudança',
-    areaServed: { '@type': 'Place', name: `${nomeCurto}, Passo Fundo - RS` },
+    areaServed: {
+      '@type': 'Place',
+      name: `Bairro ${nomeCurto}`,
+      containedInPlace: {
+        '@type': 'City',
+        name: SITE.cidade,
+        containedInPlace: { '@type': 'State', name: SITE.estadoNome },
+      },
+    },
     provider: { '@id': new URL('/#empresa', Astro.site).href },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
