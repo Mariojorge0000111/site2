@@ -4,6 +4,7 @@ import Cta from '../components/Cta.astro';
 import Faq from '../components/Faq.astro';
 import Img from '../components/Img.astro';
 import { linkWhatsapp, REGIAO } from '../config';
+import { hrefCidade } from '../data/cidades';
 import { SERVICOS } from '../data/servicos';
 import { BAIRROS } from '../data/bairros';
 
@@ -23,16 +24,16 @@ const schemaFaq = {
 };
 ---
 <Base
-  title="Mudança e Frete em Passo Fundo e Região"
-  description="Mudanças, fretes e carretos em Passo Fundo e região: residencial, comercial, montagem de móveis e frete para Marau e Carazinho. Orçamento pelo WhatsApp."
+  title="Mudanças em Passo Fundo-RS | Fretes e carretos"
+  description="Mudanças em Passo Fundo de casa, apartamento e kitnet, além de fretes e carretos na cidade e para Marau e Carazinho. Orçamento pelo WhatsApp."
   schema={schemaFaq}
   preloadImg="hero"
 >
   <section class="hero">
     <div class="wrap dividido" style="align-items:center">
       <div>
-        <h1 style="font-size:clamp(2.4rem,5.6vw,4.4rem)">Mudanças e fretes em Passo Fundo.</h1>
-        <p class="lead">Da kitnet perto da UPF ao apartamento no Centro, da casa no Boqueirão até Marau ou Carazinho. Você recebe o valor antes, e os móveis viajam protegidos da chuva.</p>
+        <h1 style="font-size:clamp(2.4rem,5.6vw,4.4rem)">Mudanças em Passo Fundo.</h1>
+        <p class="lead">Fretes e carretos também: da kitnet perto da UPF ao apartamento no Centro, da casa no Boqueirão até Marau ou Carazinho. Você recebe o valor antes, e os móveis viajam protegidos da chuva.</p>
         <div class="acoes">
           <a class="btn" href={linkWhatsapp()} target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
           <a class="link" href="/servicos/">Conhecer os serviços</a>
@@ -103,8 +104,17 @@ const schemaFaq = {
         <ul class="bairros-lista" style="margin-top:28px">
           {BAIRROS.map((b) => <li><a href={`/bairros/${b.slug}/`}>{b.nome}</a></li>)}
         </ul>
-        <p style="margin-top:22px;color:var(--suave)">Cidades da região: {REGIAO.join(', ')}.</p>
-        <p class="acoes"><a class="btn btn-preto" href="/bairros/">Ver bairros atendidos</a></p>
+        <p style="margin-top:22px;color:var(--suave)">
+          Cidades da região:{' '}
+          {REGIAO.map((c, i) => {
+            const href = hrefCidade(c);
+            return <>{i > 0 && ', '}{href ? <a href={href}>{c}</a> : c}</>;
+          })}.
+        </p>
+        <p class="acoes">
+          <a class="btn btn-preto" href="/bairros/">Ver bairros atendidos</a>
+          <a class="btn btn-preto" href="/cidades/">Ver cidades da região</a>
+        </p>
       </div>
       <Img nome="cidade" alt="Estrada cortando lavouras vista de cima" />
     </div>

@@ -1,0 +1,63 @@
+{
+  "slug": "carazinho",
+  "nome": "Carazinho",
+  "titulo": "Frete Passo Fundo para Carazinho | Mudança",
+  "descricao": "Frete e mudança entre Passo Fundo e Carazinho pela BR-285, nos dois sentidos. Casa, móveis ou carga. O valor sai pelo WhatsApp antes de fechar.",
+  "h1": "Frete e mudança entre Passo Fundo e Carazinho",
+  "resumo": "Rota pela BR-285 para mudança de casa, móveis ou carga, saindo de Passo Fundo ou de Carazinho.",
+  "lead": "Levamos mudança e frete de Passo Fundo para Carazinho e no caminho de volta. A estrada entre as duas cidades é a BR-285.",
+  "secoes": [
+    {
+      "h2": "O que cabe nessa viagem",
+      "paragrafos": [
+        "A rota serve para casa, apartamento, kitnet, um quarto de móveis ou carga de comércio. Poucos itens podem ir de [carreto](/servicos/carreto/). A casa inteira entra como [mudança residencial](/servicos/mudanca-residencial/), com desmontagem se você pedir.",
+        "O caso mais comum é mudança por emprego, família ou imóvel. Também buscamos um móvel comprado numa cidade e deixamos na outra."
+      ]
+    },
+    {
+      "h2": "A BR-285, do km 304 ao 343",
+      "paragrafos": [
+        "Carazinho fica a oeste de Passo Fundo, no encontro da BR-285 com a BR-386. Quem sai de Passo Fundo segue por essa rodovia.",
+        "O trecho da BR-285 entre os municípios tem cerca de 39 km, do quilômetro 304 ao 343. É o segmento que o DNIT usa ao tratar da ligação entre as duas cidades. De porta a porta a distância muda conforme o bairro de saída e o de chegada. O orçamento usa os dois endereços, não um preço fixo por quilômetro.",
+        "Se a coleta for no Centro de Passo Fundo, caminhão acima de 7 toneladas tem circulação restrita na Av. Brasil. O veículo é definido antes, no mesmo critério de um [frete](/servicos/frete/) urbano."
+      ]
+    },
+    {
+      "h2": "O que enviar no WhatsApp",
+      "paragrafos": [
+        "Com estes dados o valor fecha sem uma segunda saída:"
+      ],
+      "lista": [
+        "Endereço de saída e de chegada, com bairro e cidade",
+        "Lista de itens e foto dos maiores",
+        "Andar, elevador ou escada nos dois lados",
+        "Se precisa desmontar e montar móveis",
+        "Data desejada e um horário alternativo"
+      ]
+    },
+    {
+      "h2": "Marau é outra estrada",
+      "paragrafos": [
+        "Para o leste, a página de [Marau](/cidades/marau/) descreve a RS-324. O panorama das vizinhas está em [frete de Passo Fundo para a região](/blog/frete-passo-fundo-para-cidades-da-regiao/)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "p": "Vocês fazem a volta, de Carazinho para Passo Fundo?",
+      "r": "Sim. Atendemos os dois sentidos. Diga qual cidade é a saída e qual é a chegada."
+    },
+    {
+      "p": "A mudança cabe no mesmo dia?",
+      "r": "Quando o volume cabe numa viagem e as chaves estão disponíveis nos dois lados, o normal é sair e entregar no mesmo dia. Carga grande ou espera de chave pode pedir outro horário."
+    },
+    {
+      "p": "Dá para levar só uma geladeira ou um sofá?",
+      "r": "Dá. Poucos itens vão de carreto, com veículo menor. Mande a foto e os dois endereços."
+    },
+    {
+      "p": "O preço já inclui a volta do caminhão?",
+      "r": "Sim. O valor passado antes considera ida, descarga e retorno do veículo. Uma segunda viagem é outro deslocamento, por isso a lista precisa estar completa."
+    }
+  ]
+}

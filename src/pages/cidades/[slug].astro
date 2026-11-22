@@ -1,0 +1,76 @@
+---
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Faq from '../../components/Faq.astro';
+import { SITE, linkWhatsapp } from '../../config';
+import { CIDADES, type Cidade } from '../../data/cidades';
+import { md } from '../../lib/md';
+
+export function getStaticPaths() {
+  return CIDADES.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+const { c } = Astro.props as { c: Cidade };
+const url = new URL(`/cidades/${c.slug}/`, Astro.site).href;
+const mensagem = `Oi! Encontrei o site e quero um orçamento de frete ou mudança entre Passo Fundo e ${c.nome}.`;
+const cidadeSchema = (nome: string) => ({
+  '@type': 'City',
+  name: nome,
+  containedInPlace: { '@type': 'State', name: SITE.estadoNome },
+});
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: c.h1,
+    serviceType: 'Frete e mudança',
+    description: c.descricao,
+    areaServed: [cidadeSchema(c.nome), cidadeSchema(SITE.cidade)],
+    provider: { '@id': new URL('/#empresa', Astro.site).href },
+    url,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: c.faq.map((f) => ({ '@type': 'Question', name: f.p, acceptedAnswer: { '@type': 'Answer', text: f.r } })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: new URL('/', Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: 'Cidades da região', item: new URL('/cidades/', Astro.site).href },
+      { '@type': 'ListItem', position: 3, name: c.nome, item: url },
+    ],
+  },
+];
+---
+<Base title={c.titulo} description={c.descricao} schema={schema} ogImage="cidade">
+  <section class="hero-pagina">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="/">Início</a> / <a href="/cidades/">Cidades da região</a> / {c.nome}</nav>
+      <h1>{c.h1}</h1>
+      <p class="lead" style="margin-top:18px">{c.lead}</p>
+      <div class="acoes"><a class="btn" href={linkWhatsapp(mensagem)} target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a></div>
+    </div>
+  </section>
+
+  <section class="texto conteudo" style="padding-bottom:40px">
+    {c.secoes.map((s) => (
+      <>
+        <h2>{s.h2}</h2>
+        {s.paragrafos.map((p) => <p set:html={md(p)} />)}
+        {s.lista && <ul>{s.lista.map((i) => <li set:html={md(i)} />)}</ul>}
+      </>
+    ))}
+  </section>
+
+  <section class="secao">
+    <div class="texto">
+      <h2 style="margin-bottom:28px">Perguntas sobre {c.nome}</h2>
+      <Faq itens={c.faq} />
+    </div>
+  </section>
+
+  <Cta titulo={`Frete ou mudança para ${c.nome}?`} texto="Mande os dois endereços e a lista. O valor chega pelo WhatsApp, antes de você fechar." mensagem={mensagem} />
+</Base>

@@ -54,11 +54,11 @@ As cidades abaixo fazem divisa com Passo Fundo, segundo o Plano Diretor do munic
 
 ### Marau
 
-Marau tem 45.124 habitantes pelo Censo 2022 e é a maior das vizinhas a leste. Foi elevada a município em 1954, desmembrada de Passo Fundo e de Guaporé, segundo o histórico do IBGE. A ligação com Passo Fundo é pela RS-324. Por ser uma cidade com área urbana grande, os fretes para lá costumam ser parecidos com uma mudança urbana comum, só com a estrada no meio: prédios, casas com garagem, horários de condomínio.
+Marau tem 45.124 habitantes pelo Censo 2022 e é a maior das vizinhas a leste. Foi elevada a município em 1954, desmembrada de Passo Fundo e de Guaporé, segundo o histórico do IBGE. A ligação com Passo Fundo é pela RS-324. Por ser uma cidade com área urbana grande, os fretes para lá costumam ser parecidos com uma mudança urbana comum, só com a estrada no meio: prédios, casas com garagem, horários de condomínio. A rota, nos dois sentidos, está na página de [frete e mudança para Marau](/cidades/marau/).
 
 ### Carazinho
 
-Carazinho tem 61.804 habitantes no Censo 2022 e foi emancipada de Passo Fundo em 24 de janeiro de 1931. Fica a oeste, no entroncamento da BR-285 com a BR-386. É a maior das cidades vizinhas e o caminho natural é pela BR-285. Por ser rota de rodovia federal com bastante tráfego de carga, vale combinar um horário de saída que dê folga para imprevistos na estrada.
+Carazinho tem 61.804 habitantes no Censo 2022 e foi emancipada de Passo Fundo em 24 de janeiro de 1931. Fica a oeste, no entroncamento da BR-285 com a BR-386. É a maior das cidades vizinhas e o caminho natural é pela BR-285. Por ser rota de rodovia federal com bastante tráfego de carga, vale combinar um horário de saída que dê folga para imprevistos na estrada. O serviço dessa ligação está na página de [frete e mudança para Carazinho](/cidades/carazinho/).
 
 ### Coxilha
 
